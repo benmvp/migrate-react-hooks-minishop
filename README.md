@@ -1,4 +1,4 @@
-# TypeScript for React Developers Minishop
+# Migrating to React Hooks Minishop
 
 [![Maintenance Status](https://img.shields.io/badge/status-maintained-brightgreen.svg)](https://github.com/benmvp/migrate-react-hooks-minishop/pulse)
 [![Build Status](https://github.com/benmvp/migrate-react-hooks-minishop/workflows/CI/badge.svg)](https://github.com/benmvp/migrate-react-hooks-minishop/actions)
