@@ -1,68 +1,135 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# TypeScript for React Developers Minishop
 
-## Available Scripts
+[![Maintenance Status](https://img.shields.io/badge/status-maintained-brightgreen.svg)](https://github.com/benmvp/migrate-react-hooks-minishop/pulse)
+[![Build Status](https://github.com/benmvp/migrate-react-hooks-minishop/workflows/CI/badge.svg)](https://github.com/benmvp/migrate-react-hooks-minishop/actions)
+[![license](https://img.shields.io/badge/license-GPL%20v3-blue)](#license)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
 
-In the project directory, you can run:
+[![Watch on GitHub](https://img.shields.io/github/watchers/benmvp/migrate-react-hooks-minishop.svg?style=social)](https://github.com/benmvp/migrate-react-hooks-minishop/watchers)
+[![Star on GitHub](https://img.shields.io/github/stars/benmvp/migrate-react-hooks-minishop.svg?style=social)](https://github.com/benmvp/migrate-react-hooks-minishop/stargazers)
 
-### `npm start`
+An exercise-based minishop by Ben Ilegbodu to learn how to migrate to React Hooks from class components in React applications. Best if accompanied with live facilitation by me 🙂.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Pre-Minishop Instructions
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+In order to maximize our time _during_ the minishop, please complete the following tasks in advance:
 
-### `npm test`
+- [ ] Set up the project (follow [setup instructions](#system-requirements) below)
+- [ ] Install and run [Zoom](https://zoom.us/) on the computer you'll be developing with
+- [ ] Install React Developer Tools for [Chrome](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi) (recommended) or [Firefox](https://addons.mozilla.org/en-GB/firefox/addon/react-devtools/)
+- [ ] Install a JSX-friendly code editor, such as [Visual Studio Code](https://code.visualstudio.com/)
+- [ ] Brush up on modern [ES.next](http://www.benmvp.com/learning-es6-series/) features, if they are unfamiliar to you
+- [ ] Have experience building React applications using class components
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The more prepared you are for the minishop, the better it will go for you! 👍🏾
 
-### `npm run build`
+## System Requirements
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- [git](https://git-scm.com/) v2 or higher
+- [Node.js](https://nodejs.org/en/) v10 or higher
+- [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) v6 or higher
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+All of these must also be available in your `PATH` in order to be run globally. To verify things are set up properly, run:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```sh
+git --version
+node --version
+npm --version
+```
 
-### `npm run eject`
+If your node version is version 9 or lower, you can [install `nvm`](https://github.com/creationix/nvm#install-script) to manage multiple versions of node.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+If you have trouble with any of these, learn more about the `PATH` environment variable and how to fix it here for [Windows](https://www.howtogeek.com/118594/how-to-edit-your-system-path-for-easy-command-line-access/) or [Mac/Linux](http://stackoverflow.com/a/24322978/971592).
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Setup
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+After you have verified that you have the proper tools installed (and at the proper versions), getting setup _should_ be a breeze. Run the following commands:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```sh
+git clone https://github.com/benmvp/migrate-react-hooks-minishop.git
+cd migrate-react-hooks-minishop
+npm run setup
+```
 
-## Learn More
+This will likely take a **few minutes** to run. It will clone the repo, verify the environment, and install all of the JavaScript dependencies needed to build our app.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+If it fails, please read through the error logs and see if you can figure out what the problem is. Double check that you have the proper [system requirements](#system-requirements) installed. If you are unable to figure out the problem on your own, please feel free to [file an issue](https://github.com/benmvp/migrate-react-hooks-minishop/issues/new) with _everything_ (and I mean everything) from the output of the commands you ran.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Running the app
 
-### Code Splitting
+We will go through several exercises rebuilding pieces of apps in TypeScript. To get started and verify that everything has been installed correctly, run:
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+```sh
+npm start
+```
 
-### Analyzing the Bundle Size
+The app should pop up in your default browser running at http://localhost:3000/. The app should display an index page with links to the steps in the minishop.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+For those interested, the app is a standard app bootstrapped by [Create React App](https://create-react-app.dev/).
 
-### Making a Progressive Web App
+## Minishop Outline
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+Let's learn about React Hooks! ⚛️
 
-### Advanced Configuration
+### 🧔🏾 About Me
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+Hiya! 👋🏾 My name is Ben Ilegbodu. 😄
 
-### Deployment
+- Christian, Husband, Father of 👌🏾
+- Pittsburg, California
+- Principal Frontend Engineer at [Stitch Fix](https://www.stitchfix.com/) (and yes [we're hiring](https://www.stitchfix.com/careers/jobs)!)
+- [@benmvp](https://twitter.com/benmvp)
+- [www.benmvp.com](https://www.benmvp.com/)
+- Go Rockets! 🚀🏀
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+### 🕘 Schedule
 
-### `npm run build` fails to minify
+Each step in the minishop contains exercises to apply what you just learned. It will be more than adding types to existing code. You will be writing new code using TypeScript. There are also bonuses if you've got extra time. The exercises are intended to be **a lot**, so don't worry if you don't finish them all.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+If at any point you get stuck, you can find the answers in the `final/` directory of the step.
+
+- 🛠️ Setup / Logistics / Intro
+- Step 1
+- Step 2
+- 😴 10 minutes
+- Step 3
+- Step 4
+- ❓ Q & A
+- [Final Quiz!](src/quiz/)
+- 👋🏾 Goodbye!
+
+### ❓ Asking Questions
+
+- Please **interrupt me** and ask questions! Others likely will have the _same question_.
+- However, unrelated questions are better sent to [Twitter](https://twitter.com/benmvp) or [my AMA](http://www.benmvp.com/ama).
+
+### 🖥️ Zoom Hygiene
+
+- Keep your **video on** (if possible) to make it feel more human and lively
+- Keep your **microphone muted** unless your talking to avoid background noise distractions
+- Answer each other's questions in the chat
+- Use breakout rooms to pair, if necessary
+
+### ⭐ Concepts
+
+Here is what you'll come away knowing at the end of the minishop...
+
+-
+
+## 🧠 Elaboration & Feedback
+
+Each step has an Elaboration & Feedback form link at the end. After you're done with the exercise and before jumping to the next step, please take a few minutes to fill out the form to **solidify your learning**.
+
+At the end of the minishop, I would greatly appreciate your overall feedback. [Share your minishop feedback](https://bit.ly/ts-react-ms-feedback).
+
+### 🤝 Code of Conduct
+
+All attendees, speakers, sponsors and volunteers at this minishop are required to agree with the [code of conduct](https://www.benmvp.com/minishops/conduct/). Organizers will enforce this code throughout the event. We expect cooperation from all participants to help ensure a safe environment for everybody.
+
+### 👉🏾 First Step
+
+Go to [Step 0 - Begin](src/00-begin/).
+
+## License
+
+All of the minishop material is available for **private, non-commercial use** under the [GPL version 3](http://www.gnu.org/licenses/gpl-3.0-standalone.html) license. If you would like to use this minishop to conduct your own minishop, please contact team@benmvp.com.
