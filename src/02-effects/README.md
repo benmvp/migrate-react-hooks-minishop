@@ -255,10 +255,6 @@ Use an `async` function for the call to `getResults()` within `useEffect()` inst
 
 After you're done with the exercise and before jumping to the next step, please fill out the [elaboration & feedback form](https://docs.google.com/forms/d/e/1FAIpQLScRocWvtbrl4XmT5_NRiE8bSK3CMZil-ZQByBAt8lpsurcRmw/viewform?usp=pp_url&entry.1671251225=Migrating+to+React+Hooks+Minishop&entry.1984987236=Step+2+-+Effects). It will help seal in what you've learned.
 
-## 👉🏾 Next Step
-
-Go to [Step 3 - Context & Ref](../03-context-ref/).
-
 ## 📕 Resources
 
 - [Using the Effect Hook](https://reactjs.org/docs/hooks-effect.html)
@@ -272,3 +268,7 @@ Go to [Step 3 - Context & Ref](../03-context-ref/).
 ## ❓ Questions
 
 Got questions after the minishop? Need further clarification? Feel free to post a question in [Ben Ilegbodu's AMA](https://www.benmvp.com/ama/)!
+
+## 👉🏾 Next Step
+
+Go to [Step 3 - Context & Ref](../03-context-ref/).

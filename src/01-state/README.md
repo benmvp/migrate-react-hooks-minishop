@@ -93,9 +93,11 @@ class Counter extends Component {
   }
 
   render() {
+    const { count, value } = this.state
+
     return (
       <div>
-        <p>Count: {this.state.count}</p>
+        <p>Count: {count}</p>
         <div>
           <button
             type="button"
@@ -121,7 +123,7 @@ class Counter extends Component {
           <input
             type="text"
             placeholder="Enter your name"
-            value={this.state.value}
+            value={value}
             onChange={(e) => this.setState({ value: e.target.value })}
           />
         </label>
@@ -204,10 +206,6 @@ Add a button that when clicked will toggle the query message between being upper
 
 After you're done with the exercise and before jumping to the next step, please fill out the [elaboration & feedback form](https://docs.google.com/forms/d/e/1FAIpQLScRocWvtbrl4XmT5_NRiE8bSK3CMZil-ZQByBAt8lpsurcRmw/viewform?usp=pp_url&entry.1671251225=Migrating+to+React+Hooks+Minishop&entry.1984987236=Step+1+-+State). It will help seal in what you've learned.
 
-## 👉🏾 Next Step
-
-Go to [Step 2 - Effects](../02-effects).
-
 ## 📕 Resources
 
 - [Using the State Hook](https://reactjs.org/docs/hooks-state.html)
@@ -222,3 +220,7 @@ Go to [Step 2 - Effects](../02-effects).
 ## ❓ Questions
 
 Got questions after the minishop? Need further clarification? Feel free to post a question in [Ben Ilegbodu's AMA](https://www.benmvp.com/ama/)!
+
+## 👉🏾 Next Step
+
+Go to [Step 2 - Effects](../02-effects).

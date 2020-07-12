@@ -129,10 +129,10 @@ At the end of the minishop, I would greatly appreciate your overall feedback. [S
 
 All attendees, speakers, sponsors and volunteers at this minishop are required to agree with the [code of conduct](https://www.benmvp.com/minishops/conduct/). Organizers will enforce this code throughout the event. We expect cooperation from all participants to help ensure a safe environment for everybody.
 
-### 👉🏾 First Step
-
-Go to [Step 0 - Begin](src/00-begin/).
-
 ## License
 
 All of the minishop material is available for **private, non-commercial use** under the [GPL version 3](http://www.gnu.org/licenses/gpl-3.0-standalone.html) license. If you would like to use this minishop to conduct your own minishop, please contact team@benmvp.com.
+
+### 👉🏾 First Step
+
+Go to [Step 0 - Begin](src/00-begin/).
