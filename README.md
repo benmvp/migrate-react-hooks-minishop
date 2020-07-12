@@ -75,7 +75,7 @@ Let's learn about React Hooks! ⚛️
 
 Hiya! 👋🏾 My name is Ben Ilegbodu. 😄
 
-- Christian, Husband, Father of 👌🏾
+- Christian, Husband, Father of 3️⃣
 - Pittsburg, California
 - Principal Frontend Engineer at [Stitch Fix](https://www.stitchfix.com/) (and yes [we're hiring](https://www.stitchfix.com/careers/jobs)!)
 - [@benmvp](https://twitter.com/benmvp)
@@ -89,11 +89,11 @@ Each step in the minishop contains exercises to apply what you just learned. It 
 If at any point you get stuck, you can find the answers in the `final/` directory of the step.
 
 - 🛠️ Setup / Logistics / Intro
-- Step 1
-- Step 2
+- [Step 1 - State](src/01-state/)
+- [Step 2 - Effects](src/02-effects/)
 - 😴 10 minutes
-- Step 3
-- Step 4
+- [Step 3 - Context & Ref](src/03-context-ref/)
+- [Step 4 - Custom hooks](src/04-custom-hooks/)
 - ❓ Q & A
 - [Final Quiz!](src/quiz/)
 - 👋🏾 Goodbye!
@@ -114,13 +114,15 @@ If at any point you get stuck, you can find the answers in the `final/` director
 
 Here is what you'll come away knowing at the end of the minishop...
 
--
+- Defining function components ([Step 1](src/01-state/))
+- Rules of hooks ([Step 1](src/01-state/))
+- Maintaining UI state with the `useState` hook ([Step 1](src/01-state/))
 
 ## 🧠 Elaboration & Feedback
 
 Each step has an Elaboration & Feedback form link at the end. After you're done with the exercise and before jumping to the next step, please take a few minutes to fill out the form to **solidify your learning**.
 
-At the end of the minishop, I would greatly appreciate your overall feedback. [Share your minishop feedback](https://bit.ly/ts-react-ms-feedback).
+At the end of the minishop, I would greatly appreciate your overall feedback. [Share your minishop feedback](https://bit.ly/to-hooks-ms-feedback).
 
 ### 🤝 Code of Conduct
 

@@ -5,10 +5,10 @@
 - sticking w/ function components (no longer need to convert when adding state)
 - single state item (`this.setState` -> `useState`)
 - event handlers use inner functions instead of methods
-- multiple state items (multiple `useState` calls)
 - initialized from prop
 - updater function
-- initializer function
+- multiple state items (multiple `useState` calls)
+- lazy initializer function
 
 ## Step 2 - Effects
 
