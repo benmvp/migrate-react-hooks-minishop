@@ -115,8 +115,9 @@ If at any point you get stuck, you can find the answers in the `answers/` direct
 Here is what you'll come away knowing at the end of the minishop...
 
 - Defining function components ([Step 1](src/01-state/))
-- Rules of hooks ([Step 1](src/01-state/))
-- Maintaining UI state with the `useState` hook ([Step 1](src/01-state/))
+- Maintaining UI state with the `useState` hook instead of `setState` ([Step 1](src/01-state/))
+- Managing side effects with/without cleanup using the `useEffect` hook instead of lifecycle methods ([Step 2](src/02-effects/))
+- Rules of hooks (throughout)
 
 ## 🧠 Elaboration & Feedback
 

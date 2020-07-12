@@ -53,9 +53,11 @@ class CounterClass extends Component {
   }
 
   render() {
+    const { count, value } = this.state
+
     return (
       <div>
-        <p>Count: {this.state.count}</p>
+        <p>Count: {count}</p>
         <div>
           <button
             type="button"
@@ -81,7 +83,7 @@ class CounterClass extends Component {
           <input
             type="text"
             placeholder="Enter your name"
-            value={this.state.value}
+            value={value}
             onChange={(e) => this.setState({ value: e.target.value })}
           />
         </label>

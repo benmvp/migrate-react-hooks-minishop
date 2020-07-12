@@ -15,7 +15,7 @@
 - `Counter` example w/ updating state on setInterval (`componentDidMount` -> `useEffect`)
   - unmount is effect clean-up (`componentWillUnmount` -> `useEffect`)
   - dependencies list is empty array for "1-time" setup
-- API call based on the props being based in
+- API call based on the props being passed in
   - would use `componentDidUpdate` to call again (`useEffect`)
   - instead dependencies list includes the props (or any other variables used)
 

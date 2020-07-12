@@ -2,7 +2,7 @@
 
 Before hooks, a function component had to be converted to a class component if it wanted to maintain state (or leverage lifecycle methods). A React Hook is a special function that lets you "hook into" React features. The `useState` hook lets you now add React state to function components.
 
-🏅 The goal of this step is to switch from maintaining state with classes (using `this` & `setState`) to using the `useState` hook.
+🏅 The goal of this step is to switch from maintaining state with classes (using `this.state` & `setState`) to using the `useState` hook.
 
 ## 🐇 Jump Around
 
@@ -84,14 +84,7 @@ With function components, we replace class methods with inner functions within t
 With classes, multiple state properties are added to `this.state`:
 
 ```js
-const getRandomCount = () => {
-  const count = Math.ceil(Math.random() * 10)
-
-  // log how many times we're calculating the random number
-  console.log(count)
-
-  return count
-}
+const getRandomCount = () => Math.ceil(Math.random() * 10)
 
 class Counter extends Component {
   state = {
@@ -143,14 +136,7 @@ class Counter extends Component {
 You could store the entire state in one `useState()` call, but instead you can call it multiple times to create multiple state values:
 
 ```js
-const getRandomCount = () => {
-  const count = Math.ceil(Math.random() * 10)
-
-  // log how many times we're calculating the random number
-  console.log(count)
-
-  return count
-}
+const getRandomCount = () => Math.ceil(Math.random() * 10)
 
 const Counter = () => {
   const [count, setCount] = useState(() => getRandomCount())
@@ -227,6 +213,7 @@ Go to [Step 2 - Effects](../02-effects).
 - [Using the State Hook](https://reactjs.org/docs/hooks-state.html)
 - [`useState` API Reference](https://reactjs.org/docs/hooks-reference.html#usestate)
 - [React Hooks](https://www.youtube.com/watch?v=jd8R0a2Ur8Q) 📺
+- [Introducing Hooks](https://www.youtube.com/watch?v=dpw9EHDh2bM) 📺
 - [Rules of Hooks](https://reactjs.org/docs/hooks-rules.html)
 - [`eslint-plugin-react-hooks`](https://www.npmjs.com/package/eslint-plugin-react-hooks)
 - [State and Lifecycle](https://reactjs.org/docs/state-and-lifecycle.html)

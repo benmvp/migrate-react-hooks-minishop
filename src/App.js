@@ -7,6 +7,12 @@ import Step1Answers from './01-state/answers/App'
 import Step1AnswersBonus1 from './01-state/answers/App.bonus-1'
 import Step1AnswersBonus2 from './01-state/answers/App.bonus-2'
 
+import Step2 from './02-effects/App'
+import Step2Teach from './02-effects/teach/App'
+import Step2Answers from './02-effects/answers/App'
+import Step2AnswersBonus1 from './02-effects/answers/App.bonus-1'
+import Step2AnswersBonus2 from './02-effects/answers/App.bonus-2'
+
 const Index = () => (
   <main>
     <h1>Migrating to React Hooks Minishop</h1>
@@ -124,6 +130,22 @@ const App = () => (
       </Route>
       <Route path="/step-1">
         <Step1 />
+      </Route>
+
+      <Route path="/step-2/answers/bonus-1">
+        <Step2AnswersBonus1 />
+      </Route>
+      <Route path="/step-2/answers/bonus-2">
+        <Step2AnswersBonus2 />
+      </Route>
+      <Route path="/step-2/answers">
+        <Step2Answers />
+      </Route>
+      <Route path="/step-2/teach">
+        <Step2Teach />
+      </Route>
+      <Route path="/step-2">
+        <Step2 />
       </Route>
 
       <Route path="/">
