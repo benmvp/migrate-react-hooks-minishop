@@ -19,6 +19,8 @@ Before hooks, a function component had to be converted to a class component if i
 A component class with state may look something like:
 
 ```js
+import React, { Component } from 'react'
+
 class Toggle extends Component {
   static propTypes = {
     initialOn: PropTypes.bool,
@@ -56,6 +58,8 @@ Because the next value of `on` depends on its previous value, it passes an updat
 This can be rewritten using _function components_ and the [`useState`](https://reactjs.org/docs/hooks-state.html) hook:
 
 ```js
+import React, { useState } from 'react'
+
 const Toggle = ({ initialOn }) => {
   const [on, setOn] = useState(initialOn)
 
@@ -67,10 +71,10 @@ const Toggle = ({ initialOn }) => {
     </button>
   )
 }
-ToggleHooks.propTypes = {
+Toggle.propTypes = {
   initialOn: PropTypes.bool,
 }
-ToggleHooks.defaultProps = {
+Toggle.defaultProps = {
   initialOn: true,
 }
 ```
@@ -80,6 +84,15 @@ With function components, we replace class methods with inner functions within t
 With classes, multiple state properties are added to `this.state`:
 
 ```js
+const getRandomCount = () => {
+  const count = Math.ceil(Math.random() * 10)
+
+  // log how many times we're calculating the random number
+  console.log(count)
+
+  return count
+}
+
 class Counter extends Component {
   state = {
     count: getRandomCount(),
@@ -130,6 +143,15 @@ class Counter extends Component {
 You could store the entire state in one `useState()` call, but instead you can call it multiple times to create multiple state values:
 
 ```js
+const getRandomCount = () => {
+  const count = Math.ceil(Math.random() * 10)
+
+  // log how many times we're calculating the random number
+  console.log(count)
+
+  return count
+}
+
 const Counter = () => {
   const [count, setCount] = useState(() => getRandomCount())
   const [value, setValue] = useState('')
@@ -204,7 +226,7 @@ Go to [Step 2 - Effects](../02-effects).
 
 - [Using the State Hook](https://reactjs.org/docs/hooks-state.html)
 - [`useState` API Reference](https://reactjs.org/docs/hooks-reference.html#usestate)
-- [React Hooks](https://www.youtube.com/watch?v=jd8R0a2Ur8Q)
+- [React Hooks](https://www.youtube.com/watch?v=jd8R0a2Ur8Q) 📺
 - [Rules of Hooks](https://reactjs.org/docs/hooks-rules.html)
 - [`eslint-plugin-react-hooks`](https://www.npmjs.com/package/eslint-plugin-react-hooks)
 - [State and Lifecycle](https://reactjs.org/docs/state-and-lifecycle.html)

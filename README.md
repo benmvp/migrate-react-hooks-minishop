@@ -86,7 +86,7 @@ Hiya! 👋🏾 My name is Ben Ilegbodu. 😄
 
 Each step in the minishop contains exercises to apply what you just learned. It will be more than adding types to existing code. You will be writing new code using TypeScript. There are also bonuses if you've got extra time. The exercises are intended to be **a lot**, so don't worry if you don't finish them all.
 
-If at any point you get stuck, you can find the answers in the `final/` directory of the step.
+If at any point you get stuck, you can find the answers in the `answers/` directory of the step.
 
 - 🛠️ Setup / Logistics / Intro
 - [Step 1 - State](src/01-state/)
