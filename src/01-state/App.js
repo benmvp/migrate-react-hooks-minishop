@@ -1,4 +1,4 @@
-import React, { Component, useState } from 'react'
+import React, { Component /*, useState*/ } from 'react'
 import PropTypes from 'prop-types'
 
 // 👇🏾 Uncomment the function component to convert the class
