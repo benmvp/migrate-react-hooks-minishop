@@ -25,4 +25,4 @@ Let's get started! 🎉
 
 ## 👉🏾 Next Step
 
-Go to [Step 1 - State](../src/01-state/).
+Go to [Step 1 - State](../01-state/).
