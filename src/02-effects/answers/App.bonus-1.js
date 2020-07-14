@@ -31,7 +31,7 @@ const Results = ({ results }) => {
   }
 
   return (
-    <section className="callout primary">
+    <section>
       {results.map((item) => (
         <section
           key={item.id}

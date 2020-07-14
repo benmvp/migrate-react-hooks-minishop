@@ -260,6 +260,7 @@ After you're done with the exercise and before jumping to the next step, please 
 - [Using the Effect Hook](https://reactjs.org/docs/hooks-effect.html)
 - [`useEffect` API Reference](https://reactjs.org/docs/hooks-reference.html#useeffect)
 - [React Hooks](https://www.youtube.com/watch?v=jd8R0a2Ur8Q) 📺
+- [Async React Hooks](https://www.youtube.com/watch?v=HQq5Sod8AEk) 📺
 - [Introducing Hooks](https://www.youtube.com/watch?v=dpw9EHDh2bM) 📺
 - [Rules of Hooks](https://reactjs.org/docs/hooks-rules.html)
 - [`eslint-plugin-react-hooks`](https://www.npmjs.com/package/eslint-plugin-react-hooks)
@@ -271,4 +272,4 @@ Got questions after the minishop? Need further clarification? Feel free to post 
 
 ## 👉🏾 Next Step
 
-Go to [Step 3 - Context & Ref](../03-context-ref/).
+Go to [Step 3 - Context](../03-context/).

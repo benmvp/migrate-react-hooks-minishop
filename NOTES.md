@@ -19,18 +19,18 @@
   - would use `componentDidUpdate` to call again (`useEffect`)
   - instead dependencies list includes the props (or any other variables used)
 
-## Step 3 - Context & Ref
+## Step 3 - Context
 
-- focus a text input (`createRef` -> `useRef`)
 - language in context (`contextType` -> `useContext`)
 - Exercise: dark-mode
   - Bonus: read browser dark-mode setting
+  - Bonus: set full page background
 
 ## Step 4 - Custom Hooks
 
 - `useLang` wrapper over language in context
 - `useCounter` wrapper over `useEffect` + `useState` `setInterval`
-- Exercise: `useDarkMode`
+- Exercise: `useDarkMode` / `useGiphy`
 
 ## Quiz
 

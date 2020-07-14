@@ -1,0 +1,18 @@
+{
+  "header": {
+    "en_US": "This is the header",
+    "es_ES": "Esta es la cabecera"
+  },
+  "footer": {
+    "en_US": "This is the footer",
+    "es_ES": "Este es el pie de página"
+  },
+  "changeLang": {
+    "en_US": "Change language",
+    "es_ES": "Cambiar idoma"
+  },
+  "changeLangHooks": {
+    "en_US": "Change language (Hooks)",
+    "es_ES": "Cambiar idoma (de Hooks)"
+  }
+}

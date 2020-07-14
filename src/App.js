@@ -13,6 +13,18 @@ import Step2Answers from './02-effects/answers/App'
 import Step2AnswersBonus1 from './02-effects/answers/App.bonus-1'
 import Step2AnswersBonus2 from './02-effects/answers/App.bonus-2'
 
+import Step3 from './03-context/App'
+import Step3Teach from './03-context/teach/App'
+import Step3Answers from './03-context/answers/App'
+import Step3AnswersBonus1 from './03-context/answers/App.bonus-1'
+import Step3AnswersBonus2 from './03-context/answers/App.bonus-2'
+
+// import Step4 from './04-custom-hooks/App'
+// import Step4Teach from './04-custom-hooks/teach/App'
+// import Step4Answers from './04-custom-hooks/answers/App'
+// import Step4AnswersBonus1 from './04-custom-hooks/answers/App.bonus-1'
+// import Step4AnswersBonus2 from './04-custom-hooks/answers/App.bonus-2'
+
 const Index = () => (
   <main>
     <h1>Migrating to React Hooks Minishop</h1>
@@ -45,7 +57,7 @@ const Index = () => (
         </li>
 
         <li>
-          <h4>Step 3 - Context &amp; Ref</h4>
+          <h4>Step 3 - Context</h4>
           <ul className="nested vertical menu">
             <li>
               <Link to="/step-3">Exercises</Link>
@@ -146,6 +158,22 @@ const App = () => (
       </Route>
       <Route path="/step-2">
         <Step2 />
+      </Route>
+
+      <Route path="/step-3/answers/bonus-1">
+        <Step3AnswersBonus1 />
+      </Route>
+      <Route path="/step-3/answers/bonus-2">
+        <Step3AnswersBonus2 />
+      </Route>
+      <Route path="/step-3/answers">
+        <Step3Answers />
+      </Route>
+      <Route path="/step-3/teach">
+        <Step3Teach />
+      </Route>
+      <Route path="/step-3">
+        <Step3 />
       </Route>
 
       <Route path="/">

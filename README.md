@@ -92,7 +92,7 @@ If at any point you get stuck, you can find the answers in the `answers/` direct
 - [Step 1 - State](src/01-state/)
 - [Step 2 - Effects](src/02-effects/)
 - 😴 10 minutes
-- [Step 3 - Context & Ref](src/03-context-ref/)
+- [Step 3 - Context & Ref](src/03-context/)
 - [Step 4 - Custom hooks](src/04-custom-hooks/)
 - ❓ Q & A
 - [Final Quiz!](src/quiz/)
@@ -115,9 +115,10 @@ If at any point you get stuck, you can find the answers in the `answers/` direct
 Here is what you'll come away knowing at the end of the minishop...
 
 - Defining function components ([Step 1](src/01-state/))
+- Rules of hooks (throughout)
 - Maintaining UI state with the `useState` hook instead of `setState` ([Step 1](src/01-state/))
 - Managing side effects with/without cleanup using the `useEffect` hook instead of lifecycle methods ([Step 2](src/02-effects/))
-- Rules of hooks (throughout)
+- Passing down and updating context with the `useContext` hook ([Step 3](src/03-context/))
 
 ## 🧠 Elaboration & Feedback
 
