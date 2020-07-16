@@ -210,7 +210,7 @@ In [`Page.js`](./Page.js), extract the `results` state and the `useEffect()` cal
 
 ## 🤓 Bonus!
 
-### 1. `useTheme` custom hook
+### 1. `useTheme`
 
 Create a `useTheme` hook that will read the `ThemeContext` and return the `foreground` & `background` theme values for the current theme:
 
@@ -228,7 +228,7 @@ const useTheme = () => {
 
 You should be able to use it in [`Page.js`](./Page.js), [`SearchForm.js`](./SearchForm.js) & [`ResultItem.js`](./ResultItem.js).
 
-### 2. `useDarkMode` custom hook
+### 2. `useDarkMode`
 
 Create a `useDarkMode` hook that will extract the logic in [`App.js`](./App.js) for maintaining the dark mode setting as well as initializing to the user's dark mode preference.
 
