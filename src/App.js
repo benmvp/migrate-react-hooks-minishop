@@ -19,11 +19,11 @@ import Step3Answers from './03-context/answers/App'
 import Step3AnswersBonus1 from './03-context/answers/App.bonus-1'
 import Step3AnswersBonus2 from './03-context/answers/App.bonus-2'
 
-// import Step4 from './04-custom-hooks/App'
-// import Step4Teach from './04-custom-hooks/teach/App'
-// import Step4Answers from './04-custom-hooks/answers/App'
-// import Step4AnswersBonus1 from './04-custom-hooks/answers/App.bonus-1'
-// import Step4AnswersBonus2 from './04-custom-hooks/answers/App.bonus-2'
+import Step4 from './04-custom-hooks/App'
+import Step4Teach from './04-custom-hooks/teach/App'
+import Step4Answers from './04-custom-hooks/answers/App'
+import Step4AnswersBonus1 from './04-custom-hooks/answers/bonus-1/App'
+import Step4AnswersBonus2 from './04-custom-hooks/answers/bonus-2/App'
 
 const Index = () => (
   <main>
@@ -174,6 +174,22 @@ const App = () => (
       </Route>
       <Route path="/step-3">
         <Step3 />
+      </Route>
+
+      <Route path="/step-4/answers/bonus-1">
+        <Step4AnswersBonus1 />
+      </Route>
+      <Route path="/step-4/answers/bonus-2">
+        <Step4AnswersBonus2 />
+      </Route>
+      <Route path="/step-4/answers">
+        <Step4Answers />
+      </Route>
+      <Route path="/step-4/teach">
+        <Step4Teach />
+      </Route>
+      <Route path="/step-4">
+        <Step4 />
       </Route>
 
       <Route path="/">

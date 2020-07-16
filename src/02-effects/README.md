@@ -67,29 +67,27 @@ class Counter extends Component {
   render() {
     return (
       <div>
+        <button
+          type="button"
+          className="button"
+          onClick={() =>
+            this.setState((prevState) => ({ count: prevState.count - 1 }))
+          }
+        >
+          -
+        </button>
         <p>
           {this.props.label}: {this.state.count}
         </p>
-        <div>
-          <button
-            type="button"
-            className="button"
-            onClick={() =>
-              this.setState((prevState) => ({ count: prevState.count - 1 }))
-            }
-          >
-            -
-          </button>
-          <button
-            type="button"
-            className="button"
-            onClick={() =>
-              this.setState((prevState) => ({ count: prevState.count + 1 }))
-            }
-          >
-            +
-          </button>
-        </div>
+        <button
+          type="button"
+          className="button"
+          onClick={() =>
+            this.setState((prevState) => ({ count: prevState.count + 1 }))
+          }
+        >
+          +
+        </button>
       </div>
     )
   }
@@ -115,25 +113,23 @@ const Counter = ({ label }) => {
 
   return (
     <div>
+      <button
+        type="button"
+        className="button"
+        onClick={() => setCount((prevCount) => prevCount - 1)}
+      >
+        -
+      </button>
       <p>
         {label}: {count}
       </p>
-      <div>
-        <button
-          type="button"
-          className="button"
-          onClick={() => setCount((prevCount) => prevCount - 1)}
-        >
-          -
-        </button>
-        <button
-          type="button"
-          className="button"
-          onClick={() => setCount((prevCount) => prevCount + 1)}
-        >
-          +
-        </button>
-      </div>
+      <button
+        type="button"
+        className="button"
+        onClick={() => setCount((prevCount) => prevCount + 1)}
+      >
+        +
+      </button>
     </div>
   )
 }
@@ -192,11 +188,7 @@ class Clock extends Component {
   }
 
   render() {
-    return (
-      <div>
-        <p>The time is {this.state.time.toLocaleTimeString()}.</p>
-      </div>
-    )
+    return <p>The time is {this.state.time.toLocaleTimeString()}.</p>
   }
 }
 ```
@@ -219,11 +211,7 @@ const ClockHooks = ({ tickAmount }) => {
     }
   }, [tickAmount])
 
-  return (
-    <div>
-      <p>The time is {time.toLocaleTimeString()}.</p>
-    </div>
-  )
+  return <p>The time is {time.toLocaleTimeString()}.</p>
 }
 ClockHooks.propTypes = {
   tickAmount: PropTypes.number,

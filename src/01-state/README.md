@@ -210,6 +210,7 @@ After you're done with the exercise and before jumping to the next step, please 
 
 - [Using the State Hook](https://reactjs.org/docs/hooks-state.html)
 - [`useState` API Reference](https://reactjs.org/docs/hooks-reference.html#usestate)
+- [React Hooks: Array Destructuring Fundamentals](https://kentcdodds.com/blog/react-hooks-array-destructuring-fundamentals)
 - [React Hooks](https://www.youtube.com/watch?v=jd8R0a2Ur8Q) 📺
 - [Introducing Hooks](https://www.youtube.com/watch?v=dpw9EHDh2bM) 📺
 - [Rules of Hooks](https://reactjs.org/docs/hooks-rules.html)

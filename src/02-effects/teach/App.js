@@ -14,11 +14,7 @@ const ClockHooks = ({ tickAmount }) => {
     }
   }, [tickAmount])
 
-  return (
-    <div>
-      <p>The time is {time.toLocaleTimeString()}.</p>
-    </div>
-  )
+  return <p>The time is {time.toLocaleTimeString()}.</p>
 }
 ClockHooks.propTypes = {
   tickAmount: PropTypes.number,
@@ -69,11 +65,7 @@ class ClockClass extends Component {
   }
 
   render() {
-    return (
-      <div>
-        <p>The time is {this.state.time.toLocaleTimeString()}.</p>
-      </div>
-    )
+    return <p>The time is {this.state.time.toLocaleTimeString()}.</p>
   }
 }
 
@@ -91,25 +83,23 @@ const CounterHooks = ({ label }) => {
 
   return (
     <div>
+      <button
+        type="button"
+        className="button"
+        onClick={() => setCount((prevCount) => prevCount - 1)}
+      >
+        -
+      </button>
       <p>
         {label}: {count}
       </p>
-      <div>
-        <button
-          type="button"
-          className="button"
-          onClick={() => setCount((prevCount) => prevCount - 1)}
-        >
-          -
-        </button>
-        <button
-          type="button"
-          className="button"
-          onClick={() => setCount((prevCount) => prevCount + 1)}
-        >
-          +
-        </button>
-      </div>
+      <button
+        type="button"
+        className="button"
+        onClick={() => setCount((prevCount) => prevCount + 1)}
+      >
+        +
+      </button>
     </div>
   )
 }
@@ -151,29 +141,27 @@ class CounterClass extends Component {
   render() {
     return (
       <div>
+        <button
+          type="button"
+          className="button"
+          onClick={() =>
+            this.setState((prevState) => ({ count: prevState.count - 1 }))
+          }
+        >
+          -
+        </button>
         <p>
           {this.props.label}: {this.state.count}
         </p>
-        <div>
-          <button
-            type="button"
-            className="button"
-            onClick={() =>
-              this.setState((prevState) => ({ count: prevState.count - 1 }))
-            }
-          >
-            -
-          </button>
-          <button
-            type="button"
-            className="button"
-            onClick={() =>
-              this.setState((prevState) => ({ count: prevState.count + 1 }))
-            }
-          >
-            +
-          </button>
-        </div>
+        <button
+          type="button"
+          className="button"
+          onClick={() =>
+            this.setState((prevState) => ({ count: prevState.count + 1 }))
+          }
+        >
+          +
+        </button>
       </div>
     )
   }
@@ -190,7 +178,7 @@ const App = () => (
       </div>
     </div>
 
-    <div className="grid-x grid-margin-x">
+    <div className="grid-x grid-margin-x" style={{ marginTop: '5rem' }}>
       <div className="cell small-6">
         <ClockClass />
       </div>

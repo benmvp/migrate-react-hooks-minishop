@@ -119,6 +119,7 @@ Here is what you'll come away knowing at the end of the minishop...
 - Maintaining UI state with the `useState` hook instead of `setState` ([Step 1](src/01-state/))
 - Managing side effects with/without cleanup using the `useEffect` hook instead of lifecycle methods ([Step 2](src/02-effects/))
 - Passing down and updating context with the `useContext` hook ([Step 3](src/03-context/))
+- Sharing component logic by creating custom hooks ([Step 4](src/04-custom-hooks/))
 
 ## 🧠 Elaboration & Feedback
 
