@@ -19,7 +19,7 @@ Your app should automatically reset and you should be able to continue on with t
 
 ## 💡 Exercise
 
-The auto-typist component will look something like [this example](./example-auto-typist.mov) (from https://fizbuz.com/). The component will accept a `phrases` prop which is an array of strings representing the phrases to "type". It'll also take optional `typeSpeed` & `backspaceSpeed` props, representing how fast the auto-typist types the characters and then deletes them. They will default to something reasonable.
+The auto-typist component will look something like [this example](./example-auto-typist.mp4) (from https://fizbuz.com/). The component will accept a `phrases` prop which is an array of strings representing the phrases to "type". It'll also take optional `typeSpeed` & `backspaceSpeed` props, representing how fast the auto-typist types the characters and then deletes them. They will default to something reasonable.
 
 See the [`App.js`](./App.js) for starter code of the component.
 
