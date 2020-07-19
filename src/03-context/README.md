@@ -9,7 +9,7 @@ Context provides a way to pass data (like locale, UI theme, etc.) through the co
 
 If you didn't successfully complete the previous step, that's okay! The steps are meant to push you. 😄
 
-However, you may find yourself in a position where you app is not compiling, and it's preventing you from working on the next step. No problem! Stash your changes **in a new terminal window**, and you should be good to continue:
+However, you may find yourself in a position where you app is not compiling, and it's preventing you from working on this step. No problem! Stash your changes **in a new terminal window**, and you should be good to continue:
 
 ```sh
 git stash push -m "In-progress Step 2 exercises"
@@ -26,7 +26,7 @@ Your app should automatically reset and you should be able to continue on with t
 ## ⭐ Concepts
 
 - How to provide context
-- How to use the `useContext` hook
+- How to consume context using the `useContext` hook
 
 ## 📝 Learn
 
@@ -55,6 +55,17 @@ Deep in the component tree, we can have a locale switcher component that will re
 Before hooks, this would be:
 
 ```js
+const I18N = {
+  light: {
+    foreground: '#0a0a0a',
+    background: '#fefefe',
+  },
+  dark: {
+    foreground: '#fefefe',
+    background: '#0a0a0a',
+  },
+}
+
 const LocaleSwitcher = () => (
   <LocaleContext.Consumer>
     {({ locale, setLocale }) => (
@@ -80,7 +91,7 @@ const LocaleSwitcher = () => {
 
   return (
     <label>
-      z{I18N.changeLangHooks[locale]}
+      {I18N.changeLang[locale]}
       <select value={locale} onChange={(e) => setLocale(e.target.value)}>
         <option value="en_US">English (US)</option>
         <option value="es_ES">Español (España)</option>
@@ -100,6 +111,8 @@ Add dark mode to the Giphy search app!
 - [ ] Add theming to [`SearchForm`](./SearchForm.js), specifically the form labels
 - [ ] Add theming in [`ResultItem.js`](./ResultItem.js) for the card text and background
 
+(If at any point you get stuck, you can take a peek at the [answers](./answers/))
+
 ## 🤓 Bonus!
 
 ### 1. Theme the entire body background
@@ -110,7 +123,7 @@ You will notice that the `<main>` doesn't fill the whole page, leaving a white b
 
 ### 2. Default dark mode setting to user settings
 
-Update [`App.js`] so that the initial dark mode setting will be based on the user's settings of their computer and/or browser.
+Update [`App.js`](./App.js) so that the initial dark mode setting will be based on the user's settings of their computer.
 
 🔑 _HINT:_ There is a [`prefers-color-scheme`](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme) media query that you can run in JavaScript using [`window.matchMedia`](https://developer.mozilla.org/en-US/docs/Web/API/Window/matchMedia).
 

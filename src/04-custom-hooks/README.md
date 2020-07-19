@@ -1,6 +1,6 @@
 # Step 4 - Custom Hooks
 
-Sharing component logic between components in React has been challenging. It's the problem where we have multiple components with different UIs but want to have the same stateful logic. Class mixins, higher-order components, and render props are all ways we've tried to solve this problem. Now, creating custom Hooks lets you extract component logic into reusable functions. A feature that is **not** available for class components.
+Sharing component logic between components in React has been challenging. It's the problem where we have multiple components with different UIs but want to have the same stateful logic. Class [mixins](https://reactjs.org/blog/2016/07/13/mixins-considered-harmful.html), [higher-order components](https://reactjs.org/docs/higher-order-components.html), and render props are all ways we've tried to solve this problem. Now, creating custom Hooks lets you extract component logic into reusable functions. A feature that is **not** available for class components.
 
 🏅 The goal of this step is to learn how to combine hooks to create custom hooks.
 
@@ -9,7 +9,7 @@ Sharing component logic between components in React has been challenging. It's t
 
 If you didn't successfully complete the previous step, that's okay! The steps are meant to push you. 😄
 
-However, you may find yourself in a position where you app is not compiling, and it's preventing you from working on the next step. No problem! Stash your changes **in a new terminal window**, and you should be good to continue:
+However, you may find yourself in a position where you app is not compiling, and it's preventing you from working on this step. No problem! Stash your changes **in a new terminal window**, and you should be good to continue:
 
 ```sh
 git stash push -m "In-progress Step 3 exercises"
@@ -208,6 +208,8 @@ const Calendar = () => {
 
 In [`Page.js`](./Page.js), extract the `results` state and the `useEffect()` calling the Giphy API into a `useGiphy` custom hook in [`useGiphy.js`](./useGiphy.js).
 
+(If at any point you get stuck, you can take a peek at the [answers](./answers/))
+
 ## 🤓 Bonus!
 
 ### 1. `useTheme`
@@ -257,6 +259,8 @@ After you're done with the exercise and before jumping to the next step, please 
 - [Writing a Custom Hook: `useEventListener`](https://www.youtube.com/watch) 📺
 - [`useDebugValue` API Reference](https://reactjs.org/docs/hooks-reference.html#usedebugvalue)
 - [`useCallback` API Reference](https://reactjs.org/docs/hooks-reference.html#usecallback)
+- [Render props](https://reactjs.org/docs/render-props.html)
+- [Higher-order components](https://reactjs.org/docs/higher-order-components.html)
 
 ## ❓ Questions
 
@@ -264,4 +268,4 @@ Got questions after the minishop? Need further clarification? Feel free to post 
 
 ## 👉🏾 Next Step
 
-Go to [Quiz](../quiz/).
+Go to [Final Quiz](../quiz/).

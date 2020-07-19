@@ -1,6 +1,6 @@
 # Step 1 - State
 
-Before hooks, a function component had to be converted to a class component if it wanted to maintain state (or leverage lifecycle methods). A React Hook is a special function that lets you "hook into" React features. The `useState` hook lets you now add React state to function components.
+Before hooks, a function component had to be converted to a class component if it needed to maintain state (or leverage lifecycle methods). A React Hook is a special function that lets you "hook into" React features. The `useState` hook lets you now add React state to function components.
 
 🏅 The goal of this step is to switch from maintaining state with classes (using `this.state` & `setState`) to using the `useState` hook.
 
@@ -53,9 +53,9 @@ class Toggle extends Component {
 }
 ```
 
-Because the next value of `on` depends on its previous value, it passes an updater function.
+Because the next value of `on` depends on its previous value, it passes an [updater function](https://reactjs.org/docs/faq-state.html#how-do-i-update-state-with-values-that-depend-on-the-current-state).
 
-This can be rewritten using _function components_ and the [`useState`](https://reactjs.org/docs/hooks-state.html) hook:
+This can be rewritten using a _function component_ and the [`useState`](https://reactjs.org/docs/hooks-state.html) hook:
 
 ```js
 import React, { useState } from 'react'
@@ -188,7 +188,9 @@ There are two main [rules of hooks](https://reactjs.org/docs/hooks-rules.html):
 
 ## 💡 Exercises
 
-In [`App.js`](./App.js), convert the `App` class component into a function component using the `useState` hook.
+In [`App.js`](./App.js), convert the `App` class component into a function component using the `useState` hook to maintain the state of the input field.
+
+(If at any point you get stuck, you can take a peek at the [answers](./answers/App.js))
 
 ## 🤓 Bonus!
 

@@ -19,9 +19,9 @@ Your app should automatically reset and you should be able to continue on with t
 
 ## 💡 Exercise
 
-The auto-typist component will look something like [this example](./example-auto-typist.mp4) (from https://fizbuz.com/). The component will accept a `phrases` prop which is an array of strings representing the phrases to "type". It'll also take optional `typeSpeed` & `backspaceSpeed` props, representing how fast the auto-typist types the characters and then deletes them. They will default to something reasonable.
+The auto-typist component will look something like [this example](./example-auto-typist.mp4) (from https://fizbuz.com/). The component will accept a `phrases` prop which is an array of strings representing the phrases to "type" in a loop. It'll also take optional `typeSpeed` & `backspaceSpeed` props, representing how fast the auto-typist types the characters and then deletes them. They will default to something reasonable.
 
-See the [`App.js`](./App.js) for starter code of the component.
+See the [`App.js`](./App.js) for starter code of the component. There are no answers for the quiz. 🙃
 
 Some guidance:
 
@@ -34,10 +34,10 @@ Share your working app with me on my [AMA](http://www.benmvp.com/ama/) or on [Tw
 
 After you're done with the exercise and before jumping to the end, please fill out the [elaboration & feedback form](https://docs.google.com/forms/d/e/1FAIpQLScRocWvtbrl4XmT5_NRiE8bSK3CMZil-ZQByBAt8lpsurcRmw/viewform?usp=pp_url&entry.1671251225=Migrating+to+React+Hooks+Minishop&entry.1984987236=Final+Quiz). It will help seal in what you've learned.
 
-## 👉🏾 Next Step
-
-Go to the [End](../end).
-
 ## ❓ Questions
 
 Got questions after the minishop? Need further clarification? Feel free to post a question in [Ben Ilegbodu's AMA](https://www.benmvp.com/ama/)!
+
+## 👉🏾 Next Step
+
+Go to the [End](../end).

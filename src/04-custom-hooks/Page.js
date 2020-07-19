@@ -12,7 +12,7 @@ const Page = ({ initialQuery, initialLimit }) => {
   const [query, setQuery] = useState(initialQuery)
   const [limit, setLimit] = useState(initialLimit)
 
-  // 👇🏾 extract to `useGiphy.js`
+  // 👇🏾👇🏾 extract to `useGiphy.js` 👇🏾👇🏾
   const [results, setResults] = useState([])
 
   useEffect(() => {
@@ -31,7 +31,7 @@ const Page = ({ initialQuery, initialLimit }) => {
 
     fetchResults()
   }, [query, limit])
-  // 👆🏾 extract to `useGiphy.js`
+  // 👆🏾👆🏾 extract to `useGiphy.js` 👆🏾👆🏾
 
   return (
     <main style={{ backgroundColor: THEMES[theme].background }}>
