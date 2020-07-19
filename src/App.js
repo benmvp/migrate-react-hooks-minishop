@@ -25,6 +25,8 @@ import Step4Answers from './04-custom-hooks/answers/App'
 import Step4AnswersBonus1 from './04-custom-hooks/answers/bonus-1/App'
 import Step4AnswersBonus2 from './04-custom-hooks/answers/bonus-2/App'
 
+import Quiz from './quiz/App'
+
 const Index = () => (
   <main>
     <h1>Migrating to React Hooks Minishop</h1>
@@ -73,6 +75,15 @@ const Index = () => (
             </li>
             <li>
               <Link to="/step-3/teach">Teach</Link>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <h4>Final Quiz</h4>
+          <ul className="nested vertical menu">
+            <li>
+              <Link to="/quiz">Exercise</Link>
             </li>
           </ul>
         </li>
@@ -190,6 +201,10 @@ const App = () => (
       </Route>
       <Route path="/step-4">
         <Step4 />
+      </Route>
+
+      <Route path="/quiz">
+        <Quiz />
       </Route>
 
       <Route path="/">
