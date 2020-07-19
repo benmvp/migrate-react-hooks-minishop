@@ -8,7 +8,7 @@
 [![Watch on GitHub](https://img.shields.io/github/watchers/benmvp/migrate-react-hooks-minishop.svg?style=social)](https://github.com/benmvp/migrate-react-hooks-minishop/watchers)
 [![Star on GitHub](https://img.shields.io/github/stars/benmvp/migrate-react-hooks-minishop.svg?style=social)](https://github.com/benmvp/migrate-react-hooks-minishop/stargazers)
 
-An exercise-based minishop by Ben Ilegbodu to learn how to migrate to React Hooks from class components in React applications. Best if accompanied with live facilitation by me 🙂.
+An exercise-based minishop by Ben Ilegbodu to learn how to migrate to React Hooks from classes for a better way to develop components and manage state in React applications. Best if accompanied with [live facilitation](https://www.benmvp.com/minishops/migrating-to-react-hooks/) by me 🙂.
 
 ## Pre-Minishop Instructions
 
@@ -57,7 +57,7 @@ If it fails, please read through the error logs and see if you can figure out wh
 
 ## Running the app
 
-We will go through several exercises rebuilding pieces of apps in TypeScript. To get started and verify that everything has been installed correctly, run:
+We will go through several exercises converting components written in classes to hooks. To get started and verify that everything has been installed correctly, run:
 
 ```sh
 npm start
@@ -84,7 +84,7 @@ Hiya! 👋🏾 My name is Ben Ilegbodu. 😄
 
 ### 🕘 Schedule
 
-Each step in the minishop contains exercises to apply what you just learned. It will be more than adding types to existing code. You will be writing new code using TypeScript. There are also bonuses if you've got extra time. The exercises are intended to be **a lot**, so don't worry if you don't finish them all.
+Each step in the minishop contains exercises to apply what you just learned. You will be writing new code using hooks. There are also bonuses if you've got extra time. The exercises are intended to be **a lot**, so don't worry if you don't finish them all.
 
 If at any point you get stuck, you can find the answers in the `answers/` directory of the step.
 
@@ -92,7 +92,7 @@ If at any point you get stuck, you can find the answers in the `answers/` direct
 - [Step 1 - State](src/01-state/)
 - [Step 2 - Effects](src/02-effects/)
 - 😴 10 minutes
-- [Step 3 - Context & Ref](src/03-context/)
+- [Step 3 - Context](src/03-context/)
 - [Step 4 - Custom hooks](src/04-custom-hooks/)
 - ❓ Q & A
 - [Final Quiz!](src/quiz/)
@@ -108,7 +108,7 @@ If at any point you get stuck, you can find the answers in the `answers/` direct
 - Keep your **video on** (if possible) to make it feel more human and lively
 - Keep your **microphone muted** unless your talking to avoid background noise distractions
 - Answer each other's questions in the chat
-- Use breakout rooms to pair, if necessary
+- Use breakout rooms for help
 
 ### ⭐ Concepts
 

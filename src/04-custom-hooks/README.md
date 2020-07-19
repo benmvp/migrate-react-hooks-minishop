@@ -9,7 +9,7 @@ Sharing component logic between components in React has been challenging. It's t
 
 If you didn't successfully complete the previous step, that's okay! The steps are meant to push you. 😄
 
-However, you may find yourself in a position where you app is not compiling because of TypeScript errors, and it's preventing you from working on the next step. No problem! Stash your changes **in a new terminal window**, and you should be good to continue:
+However, you may find yourself in a position where you app is not compiling, and it's preventing you from working on the next step. No problem! Stash your changes **in a new terminal window**, and you should be good to continue:
 
 ```sh
 git stash push -m "In-progress Step 3 exercises"
@@ -32,7 +32,7 @@ Your app should automatically reset and you should be able to continue on with t
 
 ### Counter
 
-Let's take our `Counter` component from [Step 2](../02-effect/):
+Let's take our `Counter` component from [Step 2](../02-effects/):
 
 ```js
 const getRandomCount = () => Math.ceil(Math.random() * 10)
