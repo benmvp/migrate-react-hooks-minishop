@@ -12,6 +12,8 @@ const useGiphy = (/*query, limit*/) => {
   // 👇🏾 Move the code making the `getResults` API call
   // 👇🏾 and storing the `results` state out of `Page.js`
   // 👇🏾 here
+  //
+  //
   // 👇🏾 return the `results`
 }
 

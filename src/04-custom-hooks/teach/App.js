@@ -2,11 +2,11 @@ import React, { useState, useEffect } from 'react'
 import Nav from '../../Nav'
 
 const useCurrentDateTime = (tickAmount) => {
-  const [time, setTime] = useState(() => new Date())
+  const [date, setDate] = useState(() => new Date())
 
   useEffect(() => {
     const intervalId = setInterval(() => {
-      setTime(new Date())
+      setDate(new Date())
     }, tickAmount)
 
     return () => {
@@ -14,7 +14,7 @@ const useCurrentDateTime = (tickAmount) => {
     }
   }, [tickAmount])
 
-  return time
+  return date
 }
 
 const ONE_DAY = 1000 * 60 * 60 * 24

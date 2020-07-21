@@ -257,6 +257,7 @@ After you're done with the exercise and before jumping to the next step, please 
 - [Building Your Own Hooks](https://reactjs.org/docs/hooks-custom.html)
 - [React Hooks: Custom Hooks](https://www.youtube.com/watch?v=fnT5b2u1PHE) 📺
 - [Writing a Custom Hook: `useEventListener`](https://www.youtube.com/watch) 📺
+- [`react-use`](https://github.com/streamich/react-use)
 - [`useDebugValue` API Reference](https://reactjs.org/docs/hooks-reference.html#usedebugvalue)
 - [`useCallback` API Reference](https://reactjs.org/docs/hooks-reference.html#usecallback)
 - [Render props](https://reactjs.org/docs/render-props.html)

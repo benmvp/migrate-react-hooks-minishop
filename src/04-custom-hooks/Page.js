@@ -5,7 +5,7 @@ import SearchForm from './SearchForm'
 import Results from './Results'
 import ThemeContext from './ThemeContext'
 import THEMES from './themes.json'
-import { getResults } from './api'
+import { getResults } from '../api'
 
 const Page = ({ initialQuery, initialLimit }) => {
   const { theme } = useContext(ThemeContext)
@@ -48,11 +48,11 @@ const Page = ({ initialQuery, initialLimit }) => {
 }
 Page.propTypes = {
   initialQuery: PropTypes.string,
-  initialLimit: PropTypes.number,
+  initialLimit: PropTypes.string,
 }
 Page.defaultProps = {
   initialQuery: '',
-  initialLimit: 12,
+  initialLimit: '12',
 }
 
 export default Page

@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
-import { getResults } from '../api'
+import { getResults } from '../../api'
 
-const LIMITS = [6, 12, 18, 24, 30]
+const LIMITS = ['6', '12', '18', '24', '30']
 
 const SearchForm = ({ query, limit, onQueryChange, onLimitChange }) => (
   <div style={{ maxWidth: 400, margin: '20px auto' }}>
@@ -85,11 +85,11 @@ const App = ({ initialQuery, initialLimit }) => {
 }
 App.propTypes = {
   initialQuery: PropTypes.string,
-  initialLimit: PropTypes.number,
+  initialLimit: PropTypes.string,
 }
 App.defaultProps = {
   initialQuery: '',
-  initialLimit: 12,
+  initialLimit: '12',
 }
 
 export default App

@@ -68,7 +68,6 @@ class Counter extends Component {
     return (
       <div>
         <button
-          type="button"
           className="button"
           onClick={() =>
             this.setState((prevState) => ({ count: prevState.count - 1 }))
@@ -80,7 +79,6 @@ class Counter extends Component {
           {this.props.label}: {this.state.count}
         </p>
         <button
-          type="button"
           className="button"
           onClick={() =>
             this.setState((prevState) => ({ count: prevState.count + 1 }))
@@ -114,7 +112,6 @@ const Counter = ({ label }) => {
   return (
     <div>
       <button
-        type="button"
         className="button"
         onClick={() => setCount((prevCount) => prevCount - 1)}
       >
@@ -124,7 +121,6 @@ const Counter = ({ label }) => {
         {label}: {count}
       </p>
       <button
-        type="button"
         className="button"
         onClick={() => setCount((prevCount) => prevCount + 1)}
       >

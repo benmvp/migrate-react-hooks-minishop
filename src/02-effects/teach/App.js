@@ -78,6 +78,8 @@ const CounterHooks = ({ label }) => {
       Number.parseInt(window.localStorage.getItem('count')) || getRandomCount(),
   )
 
+  // passing the dependencies array optimizes when the
+  // effect will be called: only when count changes
   useEffect(() => {
     window.localStorage.setItem('count', count)
   }, [count])
@@ -85,7 +87,6 @@ const CounterHooks = ({ label }) => {
   return (
     <div>
       <button
-        type="button"
         className="button"
         onClick={() => setCount((prevCount) => prevCount - 1)}
       >
@@ -95,7 +96,6 @@ const CounterHooks = ({ label }) => {
         {label}: {count}
       </p>
       <button
-        type="button"
         className="button"
         onClick={() => setCount((prevCount) => prevCount + 1)}
       >
@@ -134,6 +134,8 @@ class CounterClass extends Component {
   }
 
   componentDidUpdate(prevProps, prevState) {
+    // only write to `localStorage` if the count state has changed.
+    // when props change, we shouldn't need to update the count
     if (this.state.count !== prevState.count) {
       window.localStorage.setItem('count', this.state.count)
     }
@@ -143,7 +145,6 @@ class CounterClass extends Component {
     return (
       <div>
         <button
-          type="button"
           className="button"
           onClick={() =>
             this.setState((prevState) => ({ count: prevState.count - 1 }))
@@ -155,7 +156,6 @@ class CounterClass extends Component {
           {this.props.label}: {this.state.count}
         </p>
         <button
-          type="button"
           className="button"
           onClick={() =>
             this.setState((prevState) => ({ count: prevState.count + 1 }))

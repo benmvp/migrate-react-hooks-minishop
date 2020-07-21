@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import useTheme from './useTheme'
 
-const LIMITS = [6, 12, 18, 24, 30]
+const LIMITS = ['6', '12', '18', '24', '30']
 
 const SearchForm = ({ query, limit, onQueryChange, onLimitChange }) => {
   const { foreground } = useTheme()
@@ -31,7 +31,7 @@ const SearchForm = ({ query, limit, onQueryChange, onLimitChange }) => {
 
 SearchForm.propTypes = {
   query: PropTypes.string.isRequired,
-  limit: PropTypes.number.isRequired,
+  limit: PropTypes.string.isRequired,
   onQueryChange: PropTypes.func,
   onLimitChange: PropTypes.func,
 }

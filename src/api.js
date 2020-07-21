@@ -25,7 +25,7 @@ import { formatUrl } from 'url-lib'
 export const getResults = async ({
   query = '',
   rating = '',
-  limit = 12,
+  limit = '12',
 } = {}) => {
   const resp = await fetch(
     formatUrl(

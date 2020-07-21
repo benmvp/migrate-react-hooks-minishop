@@ -27,11 +27,11 @@ const Page = ({ initialQuery, initialLimit }) => {
 }
 Page.propTypes = {
   initialQuery: PropTypes.string,
-  initialLimit: PropTypes.number,
+  initialLimit: PropTypes.string,
 }
 Page.defaultProps = {
   initialQuery: '',
-  initialLimit: 12,
+  initialLimit: '12',
 }
 
 export default Page

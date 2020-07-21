@@ -45,7 +45,7 @@ class Toggle extends Component {
 
   render() {
     return (
-      <button type="button" className="button" onClick={this.handleClick}>
+      <button className="button" onClick={this.handleClick}>
         {this.state.on ? 'ON' : 'OFF'}
       </button>
     )
@@ -66,7 +66,7 @@ const Toggle = ({ initialOn }) => {
   const handleClick = () => setOn((prevOn) => !prevOn)
 
   return (
-    <button type="button" className="button success" onClick={handleClick}>
+    <button className="button" onClick={handleClick}>
       {on ? 'ON' : 'OFF'}
     </button>
   )
@@ -100,7 +100,6 @@ class Counter extends Component {
         <p>Count: {count}</p>
         <div>
           <button
-            type="button"
             className="button"
             onClick={() =>
               this.setState((prevState) => ({ count: prevState.count - 1 }))
@@ -109,7 +108,6 @@ class Counter extends Component {
             -
           </button>
           <button
-            type="button"
             className="button"
             onClick={() =>
               this.setState((prevState) => ({ count: prevState.count + 1 }))
@@ -149,14 +147,12 @@ const Counter = () => {
       <p>Count: {count}</p>
       <div>
         <button
-          type="button"
           className="button"
           onClick={() => setCount((prevCount) => prevCount - 1)}
         >
           -
         </button>
         <button
-          type="button"
           className="button"
           onClick={() => setCount((prevCount) => prevCount + 1)}
         >
@@ -217,6 +213,7 @@ After you're done with the exercise and before jumping to the next step, please 
 - [Introducing Hooks](https://www.youtube.com/watch?v=dpw9EHDh2bM) 📺
 - [Rules of Hooks](https://reactjs.org/docs/hooks-rules.html)
 - [`eslint-plugin-react-hooks`](https://www.npmjs.com/package/eslint-plugin-react-hooks)
+- [`useReducer` API Reference](https://reactjs.org/docs/hooks-reference.html#usereducer)
 - [State and Lifecycle](https://reactjs.org/docs/state-and-lifecycle.html)
 - [Public class fields](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Public_class_fields)
 

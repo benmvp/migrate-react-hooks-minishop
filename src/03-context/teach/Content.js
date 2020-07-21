@@ -1,5 +1,5 @@
 import React from 'react'
 
-const Content = () => <div style={{ minHeight: '60vh' }}></div>
+const Content = () => <div style={{ minHeight: '40vh' }}></div>
 
 export default Content

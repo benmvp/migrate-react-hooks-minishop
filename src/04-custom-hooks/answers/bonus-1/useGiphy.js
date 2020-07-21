@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { getResults } from '../../api'
+import { getResults } from '../../../api'
 
 const useGiphy = (query, limit) => {
   const [results, setResults] = useState([])

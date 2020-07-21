@@ -12,6 +12,9 @@ const getRandomCount = () => {
 }
 
 const CounterHooks = () => {
+  // Multiple calls to `useState` for multiple pieces of state
+
+  // Use laz initializer function to only call `getRandomCount` once
   const [count, setCount] = useState(() => getRandomCount())
   const [value, setValue] = useState('')
 
@@ -20,14 +23,12 @@ const CounterHooks = () => {
       <p>Count: {count}</p>
       <div>
         <button
-          type="button"
           className="button"
           onClick={() => setCount((prevCount) => prevCount - 1)}
         >
           -
         </button>
         <button
-          type="button"
           className="button"
           onClick={() => setCount((prevCount) => prevCount + 1)}
         >
@@ -61,7 +62,6 @@ class CounterClass extends Component {
         <p>Count: {count}</p>
         <div>
           <button
-            type="button"
             className="button"
             onClick={() =>
               this.setState((prevState) => ({ count: prevState.count - 1 }))
@@ -70,7 +70,6 @@ class CounterClass extends Component {
             -
           </button>
           <button
-            type="button"
             className="button"
             onClick={() =>
               this.setState((prevState) => ({ count: prevState.count + 1 }))
@@ -96,10 +95,12 @@ class CounterClass extends Component {
 const ToggleHooks = ({ initialOn }) => {
   const [on, setOn] = useState(initialOn)
 
+  // use updater function since new state is computed
+  // from previous state
   const handleClick = () => setOn((prevOn) => !prevOn)
 
   return (
-    <button type="button" className="button" onClick={handleClick}>
+    <button onClick={handleClick} className="button">
       {on ? 'ON' : 'OFF'}
     </button>
   )
@@ -128,6 +129,8 @@ class ToggleClass extends Component {
   }
 
   handleClick = () => {
+    // use updater function since new state is computed
+    // from previous state
     this.setState((prevState) => ({
       on: !prevState.on,
     }))
@@ -135,7 +138,7 @@ class ToggleClass extends Component {
 
   render() {
     return (
-      <button type="button" className="button" onClick={this.handleClick}>
+      <button onClick={this.handleClick} className="button">
         {this.state.on ? 'ON' : 'OFF'}
       </button>
     )
