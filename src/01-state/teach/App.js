@@ -14,7 +14,7 @@ const getRandomCount = () => {
 const CounterHooks = () => {
   // Multiple calls to `useState` for multiple pieces of state
 
-  // Use laz initializer function to only call `getRandomCount` once
+  // Use lazy initializer function to only call `getRandomCount` once
   const [count, setCount] = useState(() => getRandomCount())
   const [value, setValue] = useState('')
 
