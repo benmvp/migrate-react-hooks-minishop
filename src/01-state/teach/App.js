@@ -156,7 +156,7 @@ const App = () => (
         <h3>Hooks</h3>
       </div>
     </div>
-    <div className="grid-x grid-margin-x">
+    <div className="grid-x grid-margin-x" style={{ marginTop: '2rem' }}>
       <div className="cell small-6">
         <ToggleClass initialOn={false} />
       </div>
@@ -164,7 +164,7 @@ const App = () => (
         <ToggleHooks initialOn />
       </div>
     </div>
-    <div className="grid-x grid-margin-x">
+    <div className="grid-x grid-margin-x" style={{ marginTop: '4rem' }}>
       <div className="cell small-6">
         <CounterClass />
       </div>
