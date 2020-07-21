@@ -1,5 +1,6 @@
 import React, { Component, useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
+import Nav from '../../Nav'
 
 const ClockHooks = ({ tickAmount }) => {
   const [time, setTime] = useState(() => new Date())
@@ -169,6 +170,7 @@ class CounterClass extends Component {
 
 const App = () => (
   <main>
+    <Nav crumbs={[{ to: '/step-2', children: 'Step 2' }, 'Teach']} />
     <div className="grid-x grid-margin-x">
       <div className="cell small-6">
         <CounterClass />

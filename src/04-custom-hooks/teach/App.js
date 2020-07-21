@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import Nav from '../../Nav'
 
 const useCurrentDateTime = (tickAmount) => {
   const [time, setTime] = useState(() => new Date())
@@ -85,11 +86,14 @@ const Counter = () => {
 
 const App = () => {
   return (
-    <main style={{ maxWidth: 500, margin: '0 auto' }}>
-      <Counter />
-      <NumberField />
-      <Clock />
-      <Calendar />
+    <main>
+      <Nav crumbs={[{ to: '/step-4', children: 'Step 4' }, 'Teach']} />
+      <div style={{ maxWidth: 500, margin: '0 auto' }}>
+        <Counter />
+        <NumberField />
+        <Clock />
+        <Calendar />
+      </div>
     </main>
   )
 }

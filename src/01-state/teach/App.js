@@ -1,5 +1,6 @@
 import React, { Component, useState } from 'react'
 import PropTypes from 'prop-types'
+import Nav from '../../Nav'
 
 const getRandomCount = () => {
   const count = Math.ceil(Math.random() * 10)
@@ -98,7 +99,7 @@ const ToggleHooks = ({ initialOn }) => {
   const handleClick = () => setOn((prevOn) => !prevOn)
 
   return (
-    <button type="button" className="button success" onClick={handleClick}>
+    <button type="button" className="button" onClick={handleClick}>
       {on ? 'ON' : 'OFF'}
     </button>
   )
@@ -143,6 +144,15 @@ class ToggleClass extends Component {
 
 const App = () => (
   <main>
+    <Nav crumbs={[{ to: '/step-1', children: 'Step 1' }, 'Teach']} />
+    <div className="grid-x grid-margin-x">
+      <div className="cell small-6">
+        <h3>Classes</h3>
+      </div>
+      <div className="cell small-6">
+        <h3>Hooks</h3>
+      </div>
+    </div>
     <div className="grid-x grid-margin-x">
       <div className="cell small-6">
         <ToggleClass initialOn={false} />
