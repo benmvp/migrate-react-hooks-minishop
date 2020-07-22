@@ -1,6 +1,6 @@
 # Step 4 - Custom Hooks
 
-Sharing component logic between components in React has been challenging. It's the problem where we have multiple components with different UIs but want to have the same stateful logic. Class [mixins](https://reactjs.org/blog/2016/07/13/mixins-considered-harmful.html), [higher-order components](https://reactjs.org/docs/higher-order-components.html), and render props are all ways we've tried to solve this problem. Now, creating custom Hooks lets you extract component logic into reusable functions. A feature that is **not** available for class components.
+Sharing component logic between components in React has been challenging. It's the problem where we have multiple components with different UIs but want to have the same stateful logic. Class [mixins](https://reactjs.org/blog/2016/07/13/mixins-considered-harmful.html), [higher-order components](https://reactjs.org/docs/higher-order-components.html), and [render props](https://reactjs.org/docs/render-props.html) are all ways we've tried to solve this problem. Now, creating custom Hooks lets you extract component logic into reusable functions. A feature that is **not** available for class components.
 
 🏅 The goal of this step is to learn how to combine hooks to create custom hooks.
 
