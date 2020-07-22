@@ -64,9 +64,12 @@ const App = ({ initialQuery, initialLimit, pollInterval }) => {
 
   useEffect(() => {
     const fetchResults = () => {
-      getResults({ query, limit }).then(setResults, (err) => {
-        console.error(err)
-      })
+      getResults({ query, limit }).then(
+        (results) => setResults(results),
+        (err) => {
+          console.error(err)
+        },
+      )
     }
 
     const intervalId = setInterval(fetchResults, pollInterval * 1000)

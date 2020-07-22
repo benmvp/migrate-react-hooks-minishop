@@ -63,9 +63,12 @@ const App = ({ initialQuery, initialLimit }) => {
   const [results, setResults] = useState([])
 
   useEffect(() => {
-    getResults({ query, limit }).then(setResults, (err) => {
-      console.error(err)
-    })
+    getResults({ query, limit }).then(
+      (results) => setResults(results),
+      (err) => {
+        console.error(err)
+      },
+    )
   }, [query, limit])
 
   return (
