@@ -269,4 +269,4 @@ Got questions after the minishop? Need further clarification? Feel free to post 
 
 ## 👉🏾 Next Step
 
-Go to [Final Quiz](../quiz/).
+Go to [End](../end/).

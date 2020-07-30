@@ -9,3 +9,7 @@ Hopefully, you'll get to apply this learning right away at your job or in a side
 ## ❤️ Minishop Feedback
 
 Feedback is a gift. 🎁 Now that you're done with the minishop, I would greatly appreciate your overall feedback on the minishop to help make it even better for the next learners. **[Share your minishop feedback](https://bit.ly/to-hooks-ms-feedback)**.
+
+## 👉🏾 Next Step
+
+Go to the [Final Quiz](../quiz/).

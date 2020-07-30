@@ -28,7 +28,7 @@ Some guidance:
 - Use `useState` to maintain the state of the current phrase as well as the current partial phrase being typed
 - Use `useEffect` to set and clear timeouts for typing and backspacing each phrase
 
-Share your working app with me on my [AMA](http://www.benmvp.com/ama/) or on [Twitter](https://twitter.com/benmvp)!
+Share your working app with me on [Twitter](https://twitter.com/benmvp)!
 
 ## 🧠 Elaboration & Feedback
 
@@ -37,7 +37,3 @@ After you're done with the exercise and before jumping to the end, please fill o
 ## ❓ Questions
 
 Got questions after the minishop? Need further clarification? Feel free to post a question in [Ben Ilegbodu's AMA](https://www.benmvp.com/ama/)!
-
-## 👉🏾 Next Step
-
-Go to the [End](../end).
