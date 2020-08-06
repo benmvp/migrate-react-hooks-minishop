@@ -72,17 +72,19 @@ class ClockClass extends Component {
 
 const getRandomCount = () => Math.ceil(Math.random() * 10)
 
-const CounterHooks = ({ label }) => {
+const CounterHooks = ({ cacheKey, label }) => {
   const [count, setCount] = useState(
     () =>
-      Number.parseInt(window.localStorage.getItem('count')) || getRandomCount(),
+      Number.parseInt(window.localStorage.getItem(cacheKey)) ||
+      getRandomCount(),
   )
 
   // passing the dependencies array optimizes when the
-  // effect will be called: only when count changes
+  // effect will be called: only when `count` or `cacheKey`
+  // change
   useEffect(() => {
-    window.localStorage.setItem('count', count)
-  }, [count])
+    window.localStorage.setItem(cacheKey, count)
+  }, [cacheKey, count])
 
   return (
     <div>
@@ -105,17 +107,21 @@ const CounterHooks = ({ label }) => {
   )
 }
 CounterHooks.propTypes = {
+  cacheKey: PropTypes.string,
   label: PropTypes.string,
 }
 CounterHooks.defaultProps = {
+  cacheKey: 'count',
   label: 'Count',
 }
 
 class CounterClass extends Component {
   static propTypes = {
+    cacheKey: PropTypes.string,
     label: PropTypes.string,
   }
   static defaultProps = {
+    cacheKey: 'count',
     label: 'Count',
   }
 
@@ -124,43 +130,49 @@ class CounterClass extends Component {
 
     this.state = {
       count:
-        Number.parseInt(window.localStorage.getItem('count')) ||
+        Number.parseInt(window.localStorage.getItem(props.cacheKey)) ||
         getRandomCount(),
     }
   }
 
   componentDidMount() {
-    window.localStorage.setItem('count', this.state.count)
+    this.setCache()
   }
 
   componentDidUpdate(prevProps, prevState) {
-    // only write to `localStorage` if the count state has changed.
-    // when props change, we shouldn't need to update the count
-    if (this.state.count !== prevState.count) {
-      window.localStorage.setItem('count', this.state.count)
+    // only write to `localStorage` if the count state or the
+    // cacheKey prop has changed. When other props change
+    // we shouldn't need to update the count prop
+    if (
+      this.state.count !== prevState.count ||
+      this.props.cacheKey !== prevProps.cacheKey
+    ) {
+      this.setCache()
     }
+  }
+
+  setCache = () => {
+    window.localStorage.setItem(this.props.cacheKey, this.state.count)
+  }
+
+  decrement = () => {
+    this.setState((prevState) => ({ count: prevState.count - 1 }))
+  }
+
+  increment = () => {
+    this.setState((prevState) => ({ count: prevState.count + 1 }))
   }
 
   render() {
     return (
       <div>
-        <button
-          className="button"
-          onClick={() =>
-            this.setState((prevState) => ({ count: prevState.count - 1 }))
-          }
-        >
+        <button className="button" onClick={this.decrement}>
           -
         </button>
         <p>
           {this.props.label}: {this.state.count}
         </p>
-        <button
-          className="button"
-          onClick={() =>
-            this.setState((prevState) => ({ count: prevState.count + 1 }))
-          }
-        >
+        <button className="button" onClick={this.increment}>
           +
         </button>
       </div>

@@ -31,16 +31,18 @@ Your app should automatically reset and you should be able to continue on with t
 
 ## 📝 Learn
 
-If we extend our `<Counter />` component from [Step 1](../01-state/) to store the current counter to and load the initial counter value from `localStorage`, we're now performing a side effect. With class components this would look like:
+If we extend our `<Counter />` component from [Step 1](../01-state/) to store the current counter to and load the initial counter value from `localStorage`, we're now performing a **side effect**. Let's also make the key in `localStorage` configurable. With class components this would look like:
 
 ```js
 const getRandomCount = () => Math.ceil(Math.random() * 10)
 
 class Counter extends Component {
   static propTypes = {
+    cacheKey: PropTypes.string,
     label: PropTypes.string,
   }
   static defaultProps = {
+    cacheKey: 'count',
     label: 'Count',
   }
 
@@ -49,41 +51,49 @@ class Counter extends Component {
 
     this.state = {
       count:
-        Number.parseInt(window.localStorage.getItem('count')) ||
+        Number.parseInt(window.localStorage.getItem(props.cacheKey)) ||
         getRandomCount(),
     }
   }
 
   componentDidMount() {
-    window.localStorage.setItem('count', this.state.count)
+    this.setCache()
   }
 
   componentDidUpdate(prevProps, prevState) {
-    if (this.state.count !== prevState.count) {
-      window.localStorage.setItem('count', this.state.count)
+    // only write to `localStorage` if the count state or the
+    // cache key has changed. When other props change we shouldn't
+    // need to update the count
+    if (
+      this.state.count !== prevState.count ||
+      this.props.cacheKey !== prevProps.cacheKey
+    ) {
+      this.setCache()
     }
+  }
+
+  setCache = () => {
+    window.localStorage.setItem(this.props.cacheKey, this.state.count)
+  }
+
+  decrement = () => {
+    this.setState((prevState) => ({ count: prevState.count - 1 }))
+  }
+
+  increment = () => {
+    this.setState((prevState) => ({ count: prevState.count + 1 }))
   }
 
   render() {
     return (
       <div>
-        <button
-          className="button"
-          onClick={() =>
-            this.setState((prevState) => ({ count: prevState.count - 1 }))
-          }
-        >
+        <button className="button" onClick={this.decrement}>
           -
         </button>
         <p>
           {this.props.label}: {this.state.count}
         </p>
-        <button
-          className="button"
-          onClick={() =>
-            this.setState((prevState) => ({ count: prevState.count + 1 }))
-          }
-        >
+        <button className="button" onClick={this.increment}>
           +
         </button>
       </div>
@@ -99,15 +109,18 @@ The equivalent function component with the `useEffect` hook looks like:
 ```js
 const getRandomCount = () => Math.ceil(Math.random() * 10)
 
-const Counter = ({ label }) => {
+const Counter = ({ cacheKey, label }) => {
   const [count, setCount] = useState(
     () =>
-      Number.parseInt(window.localStorage.getItem('count')) || getRandomCount(),
+      Number.parseInt(window.localStorage.getItem(cacheKey)) ||
+      getRandomCount(),
   )
 
+  // passing the dependencies array optimizes when the
+  // effect will be called: only when count changes
   useEffect(() => {
-    window.localStorage.setItem('count', count)
-  }, [count])
+    window.localStorage.setItem(cacheKey, count)
+  }, [cacheKey, count])
 
   return (
     <div>
@@ -130,9 +143,11 @@ const Counter = ({ label }) => {
   )
 }
 Counter.propTypes = {
+  cacheKey: PropTypes.string,
   label: PropTypes.string,
 }
 Counter.defaultProps = {
+  cacheKey: 'count',
   label: 'Count',
 }
 ```
