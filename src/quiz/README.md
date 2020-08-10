@@ -32,7 +32,11 @@ Share your working app with me on [Twitter](https://twitter.com/benmvp)!
 
 ## 🧠 Elaboration & Feedback
 
-After you're done with the exercise and before jumping to the end, please fill out the [elaboration & feedback form](https://docs.google.com/forms/d/e/1FAIpQLScRocWvtbrl4XmT5_NRiE8bSK3CMZil-ZQByBAt8lpsurcRmw/viewform?usp=pp_url&entry.1671251225=Migrating+to+React+Hooks+Minishop&entry.1984987236=Final+Quiz). It will help seal in what you've learned.
+After you're done with the quiz, please fill out the [elaboration & feedback form](https://docs.google.com/forms/d/e/1FAIpQLScRocWvtbrl4XmT5_NRiE8bSK3CMZil-ZQByBAt8lpsurcRmw/viewform?usp=pp_url&entry.1671251225=Migrating+to+React+Hooks+Minishop&entry.1984987236=Final+Quiz). It will help seal in what you've learned.
+
+## 💲 Minishop discount
+
+Hopefully you enjoyed working on the quiz to help apply everything you learned. To say "congratulations," I'm offering a **25% discount** on any future minishop. Just send me an email (ben@benmvp.com) before you register for the minishop, and I will send you a discount code. Congratulations! 🎉
 
 ## ❓ Questions
 
