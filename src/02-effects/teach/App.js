@@ -86,6 +86,12 @@ const CounterHooks = ({ cacheKey, label }) => {
     window.localStorage.setItem(cacheKey, count)
   }, [cacheKey, count])
 
+  // separate `useEffect` calls which are handling
+  // different effects
+  useEffect(() => {
+    document.title = label
+  }, [label])
+
   return (
     <div>
       <button
@@ -137,6 +143,7 @@ class CounterClass extends Component {
 
   componentDidMount() {
     this.setCache()
+    this.updateTitle()
   }
 
   componentDidUpdate(prevProps, prevState) {
@@ -149,10 +156,19 @@ class CounterClass extends Component {
     ) {
       this.setCache()
     }
+
+    // only if the props change should we update title
+    if (this.props.label !== prevProps.label) {
+      this.updateTitle()
+    }
   }
 
   setCache = () => {
     window.localStorage.setItem(this.props.cacheKey, this.state.count)
+  }
+
+  updateTitle = () => {
+    document.title = this.props.label
   }
 
   decrement = () => {
