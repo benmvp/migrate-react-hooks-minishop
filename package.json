@@ -4,7 +4,7 @@
   "private": true,
   "license": "GPL-3.0-only",
   "engines": {
-    "node": ">=10",
+    "node": ">=12",
     "npm": ">=6"
   },
   "scripts": {
