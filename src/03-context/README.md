@@ -19,87 +19,10 @@ Your app should automatically reset and you should be able to continue on with t
 
 </details>
 
-## 🐇 Jump Around
-
-[Concepts](#-concepts) | [Learn](#-learn) | [Exercises](#-exercises) | [Elaboration & Feedback](#-elaboration--feedback) | [Resources](#-resources)
-
 ## ⭐ Concepts
 
 - How to provide context
 - How to consume context using the `useContext` hook
-
-## 📝 Learn
-
-Imagine having a `LocaleContext` context to store the current locale and provide function to update it:
-
-```js
-export const LocaleContext = createContext()
-```
-
-An `App`, can provide the locale and an updater function to its tree:
-
-```js
-const App = () => {
-  const [locale, setLocale] = useState('en_US')
-
-  return (
-    <LocaleContext.Provider value={{ locale, setLocale }}>
-      <Layout />
-    </LocaleContext.Provider>
-  )
-}
-```
-
-Deep in the component tree, we can have a locale switcher component that will read the current context and provide UI to change it.
-
-Before hooks, this would be:
-
-```js
-const I18N = {
-  light: {
-    foreground: '#0a0a0a',
-    background: '#fefefe',
-  },
-  dark: {
-    foreground: '#fefefe',
-    background: '#0a0a0a',
-  },
-}
-
-const LocaleSwitcher = () => (
-  <LocaleContext.Consumer>
-    {({ locale, setLocale }) => (
-      <label>
-        {I18N.changeLang[locale]}
-        <select value={locale} onChange={(e) => setLocale(e.target.value)}>
-          <option value="en_US">English (US)</option>
-          <option value="es_ES">Español (España)</option>
-        </select>
-      </label>
-    )}
-  </LocaleContext.Consumer>
-)
-```
-
-The [Context API](https://reactjs.org/docs/context.html) introduced in React 16 lets you read the context using the `LocaleContext.Consumer` component which exposes a [render prop](https://reactjs.org/docs/render-props.html).
-
-With the `useContext` hook, the code looks similar:
-
-```js
-const LocaleSwitcher = () => {
-  const { locale, setLocale } = useContext(LocaleContext)
-
-  return (
-    <label>
-      {I18N.changeLang[locale]}
-      <select value={locale} onChange={(e) => setLocale(e.target.value)}>
-        <option value="en_US">English (US)</option>
-        <option value="es_ES">Español (España)</option>
-      </select>
-    </label>
-  )
-}
-```
 
 ## 💡 Exercises
 
