@@ -36,6 +36,10 @@ Add dark mode to the Giphy search app!
 
 (If at any point you get stuck, you can take a peek at the [answers](./answers/))
 
+## 🧠 Elaboration & Feedback
+
+After you're done with the exercise and before jumping to the next step, please fill out the [elaboration & feedback form](https://docs.google.com/forms/d/e/1FAIpQLScRocWvtbrl4XmT5_NRiE8bSK3CMZil-ZQByBAt8lpsurcRmw/viewform?usp=pp_url&entry.1671251225=Migrating+to+React+Hooks+Minishop&entry.1984987236=Step+3+-+Context). It will help seal in what you've learned.
+
 ## 🤓 Bonus!
 
 ### 1. Theme the entire body background
@@ -49,10 +53,6 @@ You will notice that the `<main>` doesn't fill the whole page, leaving a white b
 Update [`App.js`](./App.js) so that the initial dark mode setting will be based on the user's settings of their computer.
 
 🔑 _HINT:_ There is a [`prefers-color-scheme`](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme) media query that you can run in JavaScript using [`window.matchMedia`](https://developer.mozilla.org/en-US/docs/Web/API/Window/matchMedia).
-
-## 🧠 Elaboration & Feedback
-
-After you're done with the exercise and before jumping to the next step, please fill out the [elaboration & feedback form](https://docs.google.com/forms/d/e/1FAIpQLScRocWvtbrl4XmT5_NRiE8bSK3CMZil-ZQByBAt8lpsurcRmw/viewform?usp=pp_url&entry.1671251225=Migrating+to+React+Hooks+Minishop&entry.1984987236=Step+3+-+Context). It will help seal in what you've learned.
 
 ## 📕 Resources
 

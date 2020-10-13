@@ -31,6 +31,10 @@ In [`App.js`](./App.js), convert the `App` class component into a function compo
 
 (If at any point you get stuck, you can take a peek at the [answers](./answers/App.js))
 
+## 🧠 Elaboration & Feedback
+
+After you're done with the exercise and before jumping to the next step, please fill out the [elaboration & feedback form](https://docs.google.com/forms/d/e/1FAIpQLScRocWvtbrl4XmT5_NRiE8bSK3CMZil-ZQByBAt8lpsurcRmw/viewform?usp=pp_url&entry.1671251225=Migrating+to+React+Hooks+Minishop&entry.1984987236=Step+2+-+Effects). It will help seal in what you've learned.
+
 ## 🤓 Bonus!
 
 ### 1. Polling
@@ -42,10 +46,6 @@ Add polling to the app such that it will continually retrieve new results after 
 Use an `async` function for the call to `getResults()` within `useEffect()` instead of calling `.then()` on its return value.
 
 🔑 _HINT:_ Remember that an `async` function **always** returns a `Promise`, but the only return value allowed for `useEffect()` is the cleanup function callback.
-
-## 🧠 Elaboration & Feedback
-
-After you're done with the exercise and before jumping to the next step, please fill out the [elaboration & feedback form](https://docs.google.com/forms/d/e/1FAIpQLScRocWvtbrl4XmT5_NRiE8bSK3CMZil-ZQByBAt8lpsurcRmw/viewform?usp=pp_url&entry.1671251225=Migrating+to+React+Hooks+Minishop&entry.1984987236=Step+2+-+Effects). It will help seal in what you've learned.
 
 ## 📕 Resources
 

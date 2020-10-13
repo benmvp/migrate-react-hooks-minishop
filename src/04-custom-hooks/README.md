@@ -30,6 +30,10 @@ In [`Page.js`](./Page.js), extract the `results` state and the `useEffect()` cal
 
 (If at any point you get stuck, you can take a peek at the [answers](./answers/))
 
+## 🧠 Elaboration & Feedback
+
+After you're done with the exercise and before jumping to the next step, please fill out the [elaboration & feedback form](https://docs.google.com/forms/d/e/1FAIpQLScRocWvtbrl4XmT5_NRiE8bSK3CMZil-ZQByBAt8lpsurcRmw/viewform?usp=pp_url&entry.1671251225=Migrating+to+React+Hooks+Minishop&entry.1984987236=Step+4+-+Custom+Hooks). It will help seal in what you've learned.
+
 ## 🤓 Bonus!
 
 ### 1. `useTheme`
@@ -67,10 +71,6 @@ const useDarkMode = (defaultIsDarkMode = false) => {
 ```
 
 🔑 _HINT:_ `useDarkMode` maintains a `boolean` while the `theme` passed down in context is a `string` (`light` or `dark`). You will need to derive both `theme` & `setTheme` from the values returned from `useDarkMode`.
-
-## 🧠 Elaboration & Feedback
-
-After you're done with the exercise and before jumping to the next step, please fill out the [elaboration & feedback form](https://docs.google.com/forms/d/e/1FAIpQLScRocWvtbrl4XmT5_NRiE8bSK3CMZil-ZQByBAt8lpsurcRmw/viewform?usp=pp_url&entry.1671251225=Migrating+to+React+Hooks+Minishop&entry.1984987236=Step+4+-+Custom+Hooks). It will help seal in what you've learned.
 
 ## 📕 Resources
 
