@@ -36,8 +36,4 @@ After you're done with the quiz, please fill out the [elaboration & feedback for
 
 ## 💲 Minishop discount
 
-Hopefully you enjoyed working on the quiz to help apply everything you learned. To say "congratulations," I'm offering a **25% discount** on any future minishop. Just send me an email (ben@benmvp.com) before you register for the minishop, and I will send you a discount code. Congratulations! 🎉
-
-## ❓ Questions
-
-Got questions after the minishop? Need further clarification? Feel free to post a question in [Ben Ilegbodu's AMA](https://www.benmvp.com/ama/)!
+Hopefully you enjoyed working on the quiz to help you apply everything you learned. As a bonus for completing the quiz, you will receive a one-time **25% discount** to apply to any future minishop. Just send an email to team@benmvp.com before you register for the minishop, and you will receive your a discount code. Congratulations! 🎉
