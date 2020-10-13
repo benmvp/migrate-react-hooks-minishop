@@ -6,12 +6,12 @@ const ClockHooks = ({ tickAmount }) => {
   const [time, setTime] = useState(() => new Date())
 
   useEffect(() => {
-    const intervalId = setInterval(() => {
+    const intervalId = window.setInterval(() => {
       setTime(new Date())
     }, tickAmount)
 
     return () => {
-      clearInterval(intervalId)
+      window.clearInterval(intervalId)
     }
   }, [tickAmount])
 
@@ -41,13 +41,13 @@ class ClockClass extends Component {
   }
 
   setup() {
-    this.intervalId = setInterval(() => {
+    this.intervalId = window.setInterval(() => {
       this.setState({ time: new Date() })
     }, this.props.tickAmount)
   }
 
   cleanup() {
-    clearInterval(this.intervalId)
+    window.clearInterval(this.intervalId)
   }
 
   componentDidMount() {
@@ -118,7 +118,7 @@ CounterHooks.propTypes = {
 }
 CounterHooks.defaultProps = {
   cacheKey: 'count',
-  label: 'Count',
+  label: 'Hooks',
 }
 
 class CounterClass extends Component {
@@ -128,7 +128,7 @@ class CounterClass extends Component {
   }
   static defaultProps = {
     cacheKey: 'count',
-    label: 'Count',
+    label: 'Class',
   }
 
   constructor(props) {

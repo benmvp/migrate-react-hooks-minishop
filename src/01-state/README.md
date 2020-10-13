@@ -37,7 +37,7 @@ Add a button that when clicked will toggle the query message between being upper
 - [Using the State Hook](https://reactjs.org/docs/hooks-state.html)
 - [`useState` API Reference](https://reactjs.org/docs/hooks-reference.html#usestate)
 - [React Hooks: Array Destructuring Fundamentals](https://kentcdodds.com/blog/react-hooks-array-destructuring-fundamentals)
-- [Four characters can optimize your React component](https://www.benmvp.com/blog/four-characters-optimize-react-component/)
+- [Four characters can optimize your React component](https://www.benmvp.com/blog/four-characters-optimize-react-component/?utm_source=github&utm_medium=minishop-code&utm_campaign=migrate-react-hooks-minishop)
 - [React Hooks](https://www.youtube.com/watch?v=jd8R0a2Ur8Q) 📺
 - [Introducing Hooks](https://www.youtube.com/watch?v=dpw9EHDh2bM) 📺
 - [Rules of Hooks](https://reactjs.org/docs/hooks-rules.html)

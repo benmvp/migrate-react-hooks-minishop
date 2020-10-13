@@ -51,6 +51,7 @@ Use an `async` function for the call to `getResults()` within `useEffect()` inst
 
 - [Using the Effect Hook](https://reactjs.org/docs/hooks-effect.html)
 - [`useEffect` API Reference](https://reactjs.org/docs/hooks-reference.html#useeffect)
+- [Helper functions in the React `useEffect` hook](https://www.benmvp.com/blog/helper-functions-react-useeffect-hook/?utm_source=github&utm_medium=minishop-code&utm_campaign=migrate-react-hooks-minishop)
 - [React Hooks](https://www.youtube.com/watch?v=jd8R0a2Ur8Q) 📺
 - [Async React Hooks](https://www.youtube.com/watch?v=HQq5Sod8AEk) 📺
 - [Introducing Hooks](https://www.youtube.com/watch?v=dpw9EHDh2bM) 📺
