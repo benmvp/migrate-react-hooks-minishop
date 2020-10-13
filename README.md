@@ -101,7 +101,7 @@ If at any point you get stuck, you can find the answers in the `answers/` direct
 ### ❓ Asking Questions
 
 - Please **interrupt me** and ask questions! Others likely will have the _same question_.
-- However, unrelated questions are better sent to [Twitter](https://twitter.com/benmvp) or [my AMA](http://www.benmvp.com/ama).
+- However, unrelated questions are best sent to [Twitter](https://twitter.com/benmvp).
 
 ### 🖥️ Zoom Hygiene
 

@@ -283,10 +283,6 @@ After you're done with the exercise and before jumping to the next step, please 
 - [`eslint-plugin-react-hooks`](https://www.npmjs.com/package/eslint-plugin-react-hooks)
 - [State and Lifecycle](https://reactjs.org/docs/state-and-lifecycle.html)
 
-## ❓ Questions
-
-Got questions after the minishop? Need further clarification? Feel free to post a question in [Ben Ilegbodu's AMA](https://www.benmvp.com/ama/)!
-
 ## 👉🏾 Next Step
 
 Go to [Step 3 - Context](../03-context/).

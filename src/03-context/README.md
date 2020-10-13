@@ -140,10 +140,6 @@ After you're done with the exercise and before jumping to the next step, please 
 - [How to `useContext` with `usesReducer`](https://www.youtube.com/watch?v=StABs9JxeNE) 📺
 - [Render props](https://reactjs.org/docs/render-props.html)
 
-## ❓ Questions
-
-Got questions after the minishop? Need further clarification? Feel free to post a question in [Ben Ilegbodu's AMA](https://www.benmvp.com/ama/)!
-
 ## 👉🏾 Next Step
 
 Go to [Step 4 - Custom Hooks](../04-custom-hooks/).

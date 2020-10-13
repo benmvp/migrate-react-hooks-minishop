@@ -263,10 +263,6 @@ After you're done with the exercise and before jumping to the next step, please 
 - [Render props](https://reactjs.org/docs/render-props.html)
 - [Higher-order components](https://reactjs.org/docs/higher-order-components.html)
 
-## ❓ Questions
-
-Got questions after the minishop? Need further clarification? Feel free to post a question in [Ben Ilegbodu's AMA](https://www.benmvp.com/ama/)!
-
 ## 👉🏾 Next Step
 
 Go to [End](../end/).

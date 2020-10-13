@@ -209,6 +209,7 @@ After you're done with the exercise and before jumping to the next step, please 
 - [Using the State Hook](https://reactjs.org/docs/hooks-state.html)
 - [`useState` API Reference](https://reactjs.org/docs/hooks-reference.html#usestate)
 - [React Hooks: Array Destructuring Fundamentals](https://kentcdodds.com/blog/react-hooks-array-destructuring-fundamentals)
+- [Four characters can optimize your React component](https://www.benmvp.com/blog/four-characters-optimize-react-component/)
 - [React Hooks](https://www.youtube.com/watch?v=jd8R0a2Ur8Q) 📺
 - [Introducing Hooks](https://www.youtube.com/watch?v=dpw9EHDh2bM) 📺
 - [Rules of Hooks](https://reactjs.org/docs/hooks-rules.html)
@@ -216,10 +217,6 @@ After you're done with the exercise and before jumping to the next step, please 
 - [`useReducer` API Reference](https://reactjs.org/docs/hooks-reference.html#usereducer)
 - [State and Lifecycle](https://reactjs.org/docs/state-and-lifecycle.html)
 - [Public class fields](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Public_class_fields)
-
-## ❓ Questions
-
-Got questions after the minishop? Need further clarification? Feel free to post a question in [Ben Ilegbodu's AMA](https://www.benmvp.com/ama/)!
 
 ## 👉🏾 Next Step
 
