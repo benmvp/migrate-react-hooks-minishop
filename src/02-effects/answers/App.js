@@ -64,7 +64,7 @@ const App = ({ initialQuery, initialLimit }) => {
 
   useEffect(() => {
     getResults({ query, limit }).then(
-      (results) => setResults(results),
+      (apiResults) => setResults(apiResults),
       (err) => {
         console.error(err)
       },

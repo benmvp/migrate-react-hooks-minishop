@@ -7,12 +7,12 @@ const useGiphy = (query, limit) => {
   useEffect(() => {
     const fetchResults = async () => {
       try {
-        const results = await getResults({
+        const apiResults = await getResults({
           query,
           limit,
         })
 
-        setResults(results)
+        setResults(apiResults)
       } catch (err) {
         console.error(err)
       }

@@ -20,7 +20,7 @@ import { formatUrl } from 'url-lib'
  *
  * Retrieves a list of giphy image info matching the specified search parameters
  * @param {SearchParams} [params] Search parameters
- * @returns {GiphyResult[]}
+ * @returns {Promise<GiphyResult[]>}
  */
 export const getResults = async ({
   query = '',
