@@ -8,7 +8,7 @@
 [![Watch on GitHub](https://img.shields.io/github/watchers/benmvp/migrate-react-hooks-minishop.svg?style=social)](https://github.com/benmvp/migrate-react-hooks-minishop/watchers)
 [![Star on GitHub](https://img.shields.io/github/stars/benmvp/migrate-react-hooks-minishop.svg?style=social)](https://github.com/benmvp/migrate-react-hooks-minishop/stargazers)
 
-An exercise-based minishop by Ben Ilegbodu to learn how to migrate to React Hooks from classes for a better way to develop components and manage state in React applications. Best if accompanied with [live facilitation](https://www.benmvp.com/minishops/migrating-to-react-hooks/) by me 🙂.
+An exercise-based minishop by Ben Ilegbodu to learn how to migrate to React Hooks from classes for a better way to develop components and manage state in React applications. Best if accompanied with [live facilitation](https://www.benmvp.com/minishops/migrating-to-react-hooks/?utm_source=github&utm_medium=minishop-code&utm_campaign=migrate-react-hooks-minishop) by me 🙂.
 
 ## Pre-Minishop Instructions
 
@@ -18,7 +18,7 @@ In order to maximize our time _during_ the minishop, please complete the followi
 - [ ] Install and run [Zoom](https://zoom.us/) on the computer you'll be developing with
 - [ ] Install React Developer Tools for [Chrome](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi) (recommended) or [Firefox](https://addons.mozilla.org/en-GB/firefox/addon/react-devtools/)
 - [ ] Install a JSX-friendly code editor, such as [Visual Studio Code](https://code.visualstudio.com/)
-- [ ] Brush up on modern [ES.next](http://www.benmvp.com/learning-es6-series/) features, if they are unfamiliar to you
+- [ ] Brush up on modern [ES.next](http://www.benmvp.com/learning-es6-series/?utm_source=github&utm_medium=minishop-code&utm_campaign=migrate-react-hooks-minishop) features, if they are unfamiliar to you
 - [ ] Have experience building React applications using class components
 
 The more prepared you are for the minishop, the better it will go for you! 👍🏾
@@ -79,7 +79,7 @@ Hiya! 👋🏾 My name is Ben Ilegbodu. 😄
 - Pittsburg, California
 - Principal Frontend Engineer at [Stitch Fix](https://www.stitchfix.com/) (and yes [we're hiring](https://www.stitchfix.com/careers/jobs)!)
 - [@benmvp](https://twitter.com/benmvp)
-- [www.benmvp.com](https://www.benmvp.com/)
+- [www.benmvp.com](https://www.benmvp.com/?utm_source=github&utm_medium=minishop-code&utm_campaign=migrate-react-hooks-minishop)
 - Go Rockets! 🚀🏀
 
 ### 🕘 Schedule
@@ -121,7 +121,7 @@ Here is what you'll come away knowing at the end of the minishop...
 - Passing down and updating context with the `useContext` hook ([Step 3](src/03-context/))
 - Sharing component logic by creating custom hooks ([Step 4](src/04-custom-hooks/))
 
-## 🧠 Elaboration & Feedback
+### 🧠 Elaboration & Feedback
 
 Each step has an Elaboration & Feedback form link at the end. After you're done with the exercise and before jumping to the next step, please take a few minutes to fill out the form to **solidify your learning**.
 
@@ -129,7 +129,7 @@ At the end of the minishop, I would greatly appreciate your overall feedback. [S
 
 ### 🤝 Code of Conduct
 
-All attendees, speakers, sponsors and volunteers at this minishop are required to agree with the [code of conduct](https://www.benmvp.com/minishops/conduct/). Organizers will enforce this code throughout the event. We expect cooperation from all participants to help ensure a safe environment for everybody.
+All attendees, speakers, sponsors and volunteers at this minishop are required to agree with the [code of conduct](https://www.benmvp.com/minishops/conduct/?utm_source=github&utm_medium=minishop-code&utm_campaign=migrate-react-hooks-minishop). Organizers will enforce this code throughout the event. We expect cooperation from all participants to help ensure a safe environment for everybody.
 
 ## License
 
