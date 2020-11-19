@@ -96,7 +96,7 @@ const CounterHooks = ({ cacheKey, label }) => {
     <div>
       <button
         className="button"
-        onClick={() => setCount((prevCount) => prevCount - 1)}
+        onClick={() => setCount((curCount) => curCount - 1)}
       >
         -
       </button>
@@ -105,7 +105,7 @@ const CounterHooks = ({ cacheKey, label }) => {
       </p>
       <button
         className="button"
-        onClick={() => setCount((prevCount) => prevCount + 1)}
+        onClick={() => setCount((curCount) => curCount + 1)}
       >
         +
       </button>
@@ -172,11 +172,11 @@ class CounterClass extends Component {
   }
 
   decrement = () => {
-    this.setState((prevState) => ({ count: prevState.count - 1 }))
+    this.setState((curState) => ({ count: curState.count - 1 }))
   }
 
   increment = () => {
-    this.setState((prevState) => ({ count: prevState.count + 1 }))
+    this.setState((curState) => ({ count: curState.count + 1 }))
   }
 
   render() {

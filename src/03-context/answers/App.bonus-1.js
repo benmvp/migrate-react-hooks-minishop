@@ -14,6 +14,9 @@ const App = () => {
   }, [theme])
 
   return (
+    // The theme context value is an object with
+    // the theme ("light" or "dark") and a function
+    // to update the theme
     <ThemeContext.Provider value={{ theme, setTheme }}>
       <Page />
     </ThemeContext.Provider>

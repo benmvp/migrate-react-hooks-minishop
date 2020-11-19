@@ -68,7 +68,7 @@ const Counter = () => {
       <button
         type="button"
         className="button"
-        onClick={() => setCount((prevCount) => prevCount - 1)}
+        onClick={() => setCount((curCount) => curCount - 1)}
       >
         -
       </button>
@@ -76,7 +76,7 @@ const Counter = () => {
       <button
         type="button"
         className="button"
-        onClick={() => setCount((prevCount) => prevCount + 1)}
+        onClick={() => setCount((curCount) => curCount + 1)}
       >
         +
       </button>

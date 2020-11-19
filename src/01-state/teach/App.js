@@ -24,13 +24,13 @@ const CounterHooks = () => {
       <div>
         <button
           className="button"
-          onClick={() => setCount((prevCount) => prevCount - 1)}
+          onClick={() => setCount((curCount) => curCount - 1)}
         >
           -
         </button>
         <button
           className="button"
-          onClick={() => setCount((prevCount) => prevCount + 1)}
+          onClick={() => setCount((curCount) => curCount + 1)}
         >
           +
         </button>
@@ -64,7 +64,7 @@ class CounterClass extends Component {
           <button
             className="button"
             onClick={() =>
-              this.setState((prevState) => ({ count: prevState.count - 1 }))
+              this.setState((curState) => ({ count: curState.count - 1 }))
             }
           >
             -
@@ -72,7 +72,7 @@ class CounterClass extends Component {
           <button
             className="button"
             onClick={() =>
-              this.setState((prevState) => ({ count: prevState.count + 1 }))
+              this.setState((curState) => ({ count: curState.count + 1 }))
             }
           >
             +
@@ -97,7 +97,7 @@ const ToggleHooks = ({ initialOn }) => {
 
   // use updater function since new state is computed
   // from previous state
-  const handleClick = () => setOn((prevOn) => !prevOn)
+  const handleClick = () => setOn((curOn) => !curOn)
 
   return (
     <button onClick={handleClick} className="button">
@@ -131,8 +131,8 @@ class ToggleClass extends Component {
   handleClick = () => {
     // use updater function since new state is computed
     // from previous state
-    this.setState((prevState) => ({
-      on: !prevState.on,
+    this.setState((curState) => ({
+      on: !curState.on,
     }))
   }
 

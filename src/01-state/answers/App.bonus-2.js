@@ -26,7 +26,7 @@ const App = ({ initialQuery }) => {
           <button
             type="button"
             className="button"
-            onClick={() => setUpper((prevUpper) => !prevUpper)}
+            onClick={() => setUpper((curUpper) => !curUpper)}
           >
             To {upper ? 'Normal' : 'Upper'}
           </button>

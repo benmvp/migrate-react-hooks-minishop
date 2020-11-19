@@ -60,7 +60,7 @@ Update [`App.js`](./App.js) so that the initial dark mode setting will be based 
 - [Context](https://reactjs.org/docs/context.html)
 - [How to use React Context effectively](https://kentcdodds.com/blog/how-to-use-react-context-effectively)
 - [How to optimize your context value](https://kentcdodds.com/blog/how-to-optimize-your-context-value)
-- [How to `useContext` with `usesReducer`](https://www.youtube.com/watch?v=StABs9JxeNE) 📺
+- [How to `useContext` with `useReducer`](https://www.youtube.com/watch?v=StABs9JxeNE) 📺
 - [Render props](https://reactjs.org/docs/render-props.html)
 
 ## 👉🏾 Next Step
